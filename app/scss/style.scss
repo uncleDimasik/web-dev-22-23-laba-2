@@ -1,0 +1,43 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+@import "mixins";
+
+.header {
+  background-color: $header-color;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+  }
+}
+
+
+.menu {
+  &__list {
+    display: flex;
+    gap: 40px;
+  }
+
+  &__link {
+    font-weight: $fw-bold;
+    color: $font-color;
+  }
+}
+
+
+.section {
+  padding: 20px 0 20px;
+}
+
+
+.footer {
+  background-color: $footer-color;
+  height: 150px;
+}
+
+
