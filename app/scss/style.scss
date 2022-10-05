@@ -3,11 +3,9 @@
 @import 'reset';
 @import 'libs';
 @import 'global';
-@import "mixins";
+@import 'mixins';
 
 .header {
-  background-color: $header-color;
-
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -16,27 +14,22 @@
   }
 }
 
-
 .menu {
   &__list {
     display: flex;
     gap: 40px;
   }
-
   &__link {
     font-weight: $fw-bold;
-    color: $font-color;
+    color: $dark;
   }
 }
-
 
 .section {
   padding: 20px 0 20px;
 }
 
-
 .footer {
-  background-color: $footer-color;
   height: 150px;
 }
 
