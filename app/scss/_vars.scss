@@ -1,34 +1,61 @@
+@use "sass:math";
+
+
 $font-family: 'Lato', sans-serif;
+
+$fz: rem(14);
 
 $fw-regular: 400;
 $fw-bold: 700;
 $fw-black: 900;
 
-$screen-sm: 576px;
-$screen-md: 768px;
-$screen-lg: 992px;
-$screen-xl: 1200px;
+$minWidth: 320;
+$maxWidth: 1600;
+$max-container: 1140;
+$container-padding: 15;
+$container-width: $max-container+$container-padding * 2;
+
+$screen-sm: 576;
+$screen-md: 768;
+$screen-lg: 992;
+$screen-xl: $container-width;
 
 //Colors
-$primary:#f16d7f;
-$primary-light:#f8f3f4;
-$primary-dark:#ef5b70;
+$bg-color: #fff;
 
-$grey:#e6e6e6;
-$grey-light:#f8f8f8;
-$grey-dark:#e1e1e1;
+$primary: #f16d7f;
+$primary-light: #f8f3f4;
+$primary-dark: #ef5b70;
+
+$grey: #e6e6e6;
+$grey-light: #f8f8f8;
+$grey-dark: #e1e1e1;
 
 $dark: #222222;
 $light: #ffffff;
 
 
+@function numbToPx($px) {
+  $result: $px*1px;
+  @return $result;
+}
 
-%body-font {
-  font-family: $font-family;
-  font-size: 16px;
-  background-color: $light;
-  color: $dark;
-  font-weight: $fw-regular;
+//Percent
+@function percent($px, $from) {
+  $result: math.div($px, $from) * 100%;
+  @return $result;
+}
+
+//REM
+@function rem($px) {
+  $result: math.div($px, 16) + rem;
+  @return $result;
+}
+
+//EM
+@function em($px, $current: 16) {
+  $result: math.div($px, $current) + em;
+  @return $result;
 }
 
 

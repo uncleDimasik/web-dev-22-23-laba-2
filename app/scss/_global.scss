@@ -1,20 +1,17 @@
-@import 'vars';
-
+@import "vars";
 html,
 body {
   height: 100%;
 }
 
 body {
-  @extend %body-font;
+  font-family: $font-family;
+  font-size: $fz;
+  color: $dark;
+  font-weight: $fw-regular;
+  background-color: $bg-color;
 }
 
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-}
 
 .main,
 .article {
@@ -26,9 +23,9 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: numbToPx($container-width);
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 numbToPx($container-padding);
 }
 
 
