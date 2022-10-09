@@ -67,19 +67,36 @@
 
 .top-header {
   border-bottom: $grey solid 1px;
+  background-color: #fff;
 
   &__inner {
     display: flex;
     min-height: 100px;
+    align-items: center;
   }
-  &__logo{
-    &::before{
-      content: url("../images/logo.png");
-      //background-image: url("../images/logo.png");
-    }
+}
+
+.search-header {
+  border: 1px solid $grey;
+  border-radius: rem(3);
+
+  &__button {
+    top: 0;
+    left: 0;
+    background-image: url("../images/icons/magnifying-glass-solid.svg");
   }
 
+  &__input {
+    border: none;
+    border-radius: rem(3);
+    width: rem(317);
+    height: rem(38);
+    &:focus-visible {
+      outline: none;
+    }
+  }
 }
+
 
 .nav-header {
   &__inner {
