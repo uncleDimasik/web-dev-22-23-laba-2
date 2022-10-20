@@ -23,22 +23,42 @@
                         </a>
                         <div class="top-header__search">
                             <form action="#" class="search-header">
-                                <div class="search-header__select header-select">
-                                    <select name="search-categories" class="header-select__select">
+                                <div class="search-header__select-wrapper search-select">
+                                    <select name="search-categories" class="search-select__select">
                                         <option value="none" selected>Browse</option>
                                         <option value="home">Home</option>
                                         <option value="man">Man</option>
                                         <option value="women">Women</option>
                                         <option value="kids">Kids</option>
-                                        <option value="accessories">Accessories</option>
                                     </select>
                                 </div>
-                                <input autocomplete="off" type="text" name="form[]" data-error="Error" placeholder=""
-                                       class="search-header__input">
-                                <button type="submit" class="search-header__button"></button>
+                                <input autocomplete="off" type="text" name="form[]" data-error="Error"
+                                       placeholder="Search for Item..."
+                                       class="search-header__input search-input">
+                                <button type="submit" class="search-header__button search-button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                         class="search-button__icon magnifying-glass-solid">
+                                        <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/>
+                                    </svg>
+                                </button>
                             </form>
                         </div>
-                        <div class="top_header__actions actions-header"></div>
+                        <div class="top-header__actions actions-header">
+                            <a href="#" class="actions-header__cart cart-header">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 29" class="cart-header__icon">
+                                    <path d="M31.899,7.565 L26.493,19.977 C26.296,20.410 25.882,20.686 25.409,20.686 L10.554,20.686 C10.021,20.686 9.548,20.331 9.410,19.819 L4.577,2.364 L1.184,2.364 C0.533,2.364 -0.000,1.832 -0.000,1.182 C-0.000,0.532 0.533,-0.000 1.184,-0.000 L5.464,-0.000 C5.997,-0.000 6.471,0.354 6.609,0.867 L11.442,18.322 L24.620,18.322 L28.999,8.274 L14.401,8.274 C13.750,8.274 13.217,7.742 13.217,7.092 C13.217,6.442 13.750,5.910 14.401,5.910 L30.814,5.910 C31.208,5.910 31.583,6.107 31.800,6.442 C32.017,6.777 32.057,7.191 31.899,7.565 ZM9.429,23.641 C10.909,23.641 12.112,24.843 12.112,26.320 C12.112,27.798 10.909,29.000 9.429,29.000 C7.950,29.000 6.747,27.798 6.747,26.320 C6.747,24.843 7.950,23.641 9.429,23.641 ZM26.020,23.641 C27.500,23.543 28.782,24.666 28.881,26.124 C28.920,26.852 28.703,27.542 28.230,28.074 C27.756,28.626 27.105,28.941 26.395,29.000 C26.336,29.000 26.257,29.000 26.198,29.000 C24.797,29.000 23.633,27.897 23.535,26.498 C23.436,25.040 24.541,23.740 26.020,23.641 Z"/>
+                                </svg>
+                            </a>
+                            <div class="actions-header__select-wrapper account-select">
+                                <select name="search-categories" class="account-select__select">
+                                    <option value="none" selected>My Account</option>
+                                    <option value="home">Home</option>
+                                    <option value="man">Man</option>
+                                    <option value="women">Women</option>
+                                    <option value="kids">Kids</option>
+                                </select>
+                            </div>
+                        </div>
                         <button type='button' class="icon-menu"><span></span></button>
                     </div>
                 </div>

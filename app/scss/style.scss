@@ -76,57 +76,125 @@
 		min-height: 100px;
 		align-items: center;
 	}
+
+	&__search {
+		flex: 1 1 auto;
+		@include adaptiveValue("padding-left", 37, 20)
+	}
+
+	&__actions {
+	}
 }
 
 
 .search-header {
+	max-width: rem(405);
 	border: 1px solid $grey;
 	border-radius: rem(3);
-	width: rem(317);
 	height: rem(38);
 	display: flex;
 	align-items: center;
 	overflow: hidden;
+}
 
-	&__input {
-		border: none;
-		border-radius: rem(3);
-		height: 100%;
 
-		&:focus-visible {
-			outline: none;
-		}
+.search-input {
+	border: none;
+	height: 100%;
+	flex: 1 1 auto;
+	padding-left: rem(16);
+
+	&::placeholder {
+		color: #A4A4A4;
 	}
 
-	&__button {
-		top: 0;
-		left: 0;
-		background-image: url("../images/icons/magnifying-glass-solid.svg");
+	&:focus-visible {
+		outline: none;
 	}
 }
 
 
-.header-select {
+.search-button {
+	height: 100%;
+	width: rem(36);
+	padding: 0;
+	border-left: 1px solid $grey;
+
+	&__icon {
+		width: rem(14);
+		height: rem(14);
+		fill: #A4A4A4;
+	}
+}
+
+
+.search-select {
 	position: relative;
 	height: 100%;
 
 	&:after {
-		content: " ";
+		content: "";
 		position: absolute;
-		top: 55%;
-		right: 1%;
+		top: rem(19.5);
+		right: rem(7);
 		transform: translate(-50%, -50%);
-		border-left: 5px solid transparent;
-		border-right: 5px solid transparent;
-		border-top: 5px solid #838383;
+		border-left: rem(5) solid transparent;
+		border-right: rem(5) solid transparent;
+		border-top: rem(5) solid #838383;
+		pointer-events: none;
 	}
-
-
 
 	&__select {
 		height: 100%;
 		background-color: $grey-light;
 		border-right: 1px solid $grey;
+		padding: 0 rem(25) 0 rem(10);
+	}
+}
+
+
+.actions-header {
+	display: flex;
+	align-items: flex-end;
+	height: rem(38);
+}
+
+
+.cart-header {
+	padding-left: rem(15);
+
+	&__icon {
+		width: rem(32);
+		height: rem(29);
+		margin-bottom: rem(-1);
+	}
+}
+
+
+.account-select {
+	position: relative;
+	height: 100%;
+	@include adaptiveValue("padding-left", 26, 0);
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: rem(19.5);
+		right: rem(7);
+		transform: translate(-50%, -50%);
+		border-left: rem(5) solid transparent;
+		border-right: rem(5) solid transparent;
+		border-top: rem(5) solid $light;
+		pointer-events: none;
+	}
+
+	&__select {
+		height: 100%;
+		color: $light;
+		font-size: rem(15);
+		border-radius: rem(3);
+		background-color: $primary;
+		padding: 0 rem(26) 0 rem(10);
 	}
 }
 
@@ -137,7 +205,7 @@
 		min-height: 50px;
 		align-items: center;
 		justify-content: center;
-		padding: 10px 0;
+		padding: rem(10) 0;
 	}
 }
 
@@ -145,7 +213,7 @@
 .menu {
 	&__list {
 		display: flex;
-		row-gap: 5px;
+		row-gap: rem(5);
 		@include adaptiveValue('column-gap', 50, 10);
 		flex-wrap: wrap;
 		justify-content: center;
