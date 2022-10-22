@@ -20,15 +20,15 @@
 	}
 }
 
-.wrapper{
-	&._lock{
+
+.wrapper {
+	&._lock {
 		@include md-max {
 			overflow: hidden;
 			position: fixed;
 		}
 	}
 }
-
 
 
 .top-header {
@@ -123,6 +123,9 @@
 		background-color: $grey-light;
 		border-right: rem(1) solid $grey;
 		padding: 0 rem(25) 0 rem(10);
+		@include md-max() {
+			@include adaptiveValue('font-size', 20, 14, $screen-md, $minWidth, 1)
+		}
 	}
 }
 
@@ -176,6 +179,9 @@
 		border-radius: rem(3);
 		background-color: $primary;
 		padding: 0 rem(26) 0 rem(10);
+		@include md-max() {
+			@include adaptiveValue('font-size', 20, 14, $screen-md, $minWidth, 1)
+		}
 	}
 }
 
@@ -203,12 +209,16 @@
 			flex-direction: column;
 			row-gap: rem(10);
 			align-items: center;
+			width: 100%;
 		}
 	}
 
 	&__link {
 		font-weight: $fw-bold;
 		color: $dark;
+		@include md-max() {
+			@include adaptiveValue('font-size', 20, 14, $screen-md, $minWidth, 1)
+		}
 	}
 }
 
