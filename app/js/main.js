@@ -3,7 +3,7 @@ da.init();
 
 $(function () {
     $('.icon-menu').on('click', function () {
-        $('body').toggleClass('_lock');
+        $('.wrapper').toggleClass('_lock');
         $('.icon-menu').toggleClass('menu-open');
         $('.menu__body').toggleClass('menu-open');
     })

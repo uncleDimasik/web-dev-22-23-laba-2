@@ -20,12 +20,15 @@
 	}
 }
 
-
-body._lock {
-	@include md-max {
-		overflow: hidden;
+.wrapper{
+	&._lock{
+		@include md-max {
+			overflow: hidden;
+			position: fixed;
+		}
 	}
 }
+
 
 
 .top-header {
