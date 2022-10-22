@@ -1,29 +1,54 @@
 @use "sass:math";
 @import "vars";
 
-@mixin sm {
+@mixin sm-max {
   @media (max-width: #{numbToPx($screen-sm)}) {
     @content;
   }
 }
 
-@mixin md {
+@mixin md-max {
   @media (max-width: #{numbToPx($screen-md)}) {
     @content;
   }
 }
 
-@mixin lg {
+@mixin lg-max {
   @media (max-width: #{numbToPx($screen-lg)}) {
     @content;
   }
 }
 
-@mixin xl {
+@mixin xl-max {
   @media (max-width: #{numbToPx($screen-xl)}) {
     @content;
   }
 }
+//-------------------min----------------
+@mixin sm-min {
+  @media (min-width: #{numbToPx($screen-sm+1)}) {
+    @content;
+  }
+}
+
+@mixin md-min {
+  @media (min-width: #{numbToPx($screen-md+1)}) {
+    @content;
+  }
+}
+
+@mixin lg-min {
+  @media (min-width: #{numbToPx($screen-lg+1)}) {
+    @content;
+  }
+}
+
+@mixin xl-min {
+  @media (min-width: #{numbToPx($screen-xl+1)}) {
+    @content;
+  }
+}
+
 
 @mixin adaptiveValue($property, $startSize, $minSize, $widthFrom: $container-width, $widthTo: $minWidth, $keepSize: 0) {
   @if ($startSize==0) {

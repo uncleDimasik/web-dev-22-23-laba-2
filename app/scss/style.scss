@@ -14,29 +14,51 @@
 }
 
 
-.top-header {
-	border-bottom: $grey solid 1px;
-	background-color: #FFF;
-
-	&__inner {
-		display: flex;
-		min-height: 100px;
-		align-items: center;
-	}
-
-	&__search {
-		flex: 1 1 auto;
-		@include adaptiveValue("padding-left", 37, 20)
-	}
-
-	&__actions {
+.main {
+	@include md-max {
+		padding-top: rem(15);
 	}
 }
 
 
+body._lock {
+	@include md-max {
+		overflow: hidden;
+	}
+}
+
+
+.top-header {
+	border-bottom: $grey solid rem(1);
+	background-color: #FFF;
+
+	&__inner {
+		display: flex;
+		@include adaptiveValue("min-height", 100, 70, $max-container, $screen-md, 1);
+		align-items: center;
+		justify-content: space-between;
+
+	}
+
+	&__search {
+		@include md-min {
+			@include adaptiveValue("padding-left", 37, 10, $max-container, $screen-md, 1);
+			flex: 1 1 auto;
+		}
+	}
+
+	&__logo {
+		z-index: $z-logo;
+	}
+
+}
+
+
 .search-header {
-	max-width: rem(405);
-	border: 1px solid $grey;
+	@include md-min {
+		max-width: rem(405);
+	}
+	border: rem(1) solid $grey;
 	border-radius: rem(3);
 	height: rem(38);
 	display: flex;
@@ -46,9 +68,11 @@
 
 
 .search-input {
+
 	border: none;
 	height: 100%;
-	flex: 1 1 auto;
+	flex: 1 1;
+	min-width: rem(160);
 	padding-left: rem(16);
 
 	&::placeholder {
@@ -62,10 +86,10 @@
 
 
 .search-button {
-	height: 100%;
 	width: rem(36);
 	padding: 0;
-	border-left: 1px solid $grey;
+	height: 100%;
+	border-left: rem(1) solid $grey;
 
 	&__icon {
 		width: rem(14);
@@ -94,7 +118,7 @@
 	&__select {
 		height: 100%;
 		background-color: $grey-light;
-		border-right: 1px solid $grey;
+		border-right: rem(1) solid $grey;
 		padding: 0 rem(25) 0 rem(10);
 	}
 }
@@ -102,13 +126,17 @@
 
 .actions-header {
 	display: flex;
-	align-items: flex-end;
+	align-items: center;
 	height: rem(38);
 }
 
 
 .cart-header {
 	padding-left: rem(15);
+	@include md-max {
+		padding-right: rem(15);
+		z-index: $z-icon-menu;
+	}
 
 	&__icon {
 		width: rem(32);
@@ -120,15 +148,17 @@
 
 .account-select {
 	position: relative;
-	height: 100%;
-	@include adaptiveValue("padding-left", 26, 0);
+	height: rem(38);
+
+	@include md-min {
+		@include adaptiveValue("padding-left", 26, 0);
+	}
 
 	&:after {
 		content: "";
 		position: absolute;
-		top: rem(19.5);
-		right: rem(7);
-		transform: translate(-50%, -50%);
+		top: rem(17.5);
+		transform: translate(rem(-18.5));
 		border-left: rem(5) solid transparent;
 		border-right: rem(5) solid transparent;
 		border-top: rem(5) solid $light;
@@ -137,6 +167,7 @@
 
 	&__select {
 		height: 100%;
+		width: 100%;
 		color: $light;
 		font-size: rem(15);
 		border-radius: rem(3);
@@ -165,6 +196,11 @@
 		flex-wrap: wrap;
 		justify-content: center;
 		text-transform: uppercase;
+		@include md-max {
+			flex-direction: column;
+			row-gap: rem(10);
+			align-items: center;
+		}
 	}
 
 	&__link {
@@ -175,23 +211,51 @@
 
 
 .menu {
-	// .menu__body
 	&__body {
+		@include md-max {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			right: -100%;
+			overflow: auto;
+			background-color: $light;
+			z-index: $z-menu;
+			padding: rem(85) rem(15) rem(20) rem(15);
+			align-items: center;
+			transition: all 0.3s ease 0s;
+			&.menu-open {
+				right: 0;
+
+				&::before {
+					content: '';
+					position: fixed;
+					width: 100%;
+					height: rem(70);
+					top: 0;
+					left: 0;
+					z-index: $z-menu;
+					background-color: $light;
+					border-bottom: rem(1) solid $grey;
+				}
+			}
+		}
 	}
-	@include md{
+
+	@include md-max {
 		display: block;
 	}
 }
 
 
 .icon-menu {
-	@include md {
+	@include md-max {
 		display: block;
 		position: relative;
 		width: rem(30);
 		height: rem(18);
 		cursor: pointer;
-		z-index: 5;
+		z-index: $z-icon-menu;
 		span,
 		&::before,
 		&::after {
