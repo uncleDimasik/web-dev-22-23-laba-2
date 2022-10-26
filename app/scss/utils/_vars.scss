@@ -21,46 +21,49 @@ $screen-lg: 992;
 $screen-xl: $container-width;
 
 //z-indexes
-$z-menu:5;
-$z-icon-menu:10;
-$z-logo:15;
+$z-menu: 5;
+$z-icon-menu: 10;
+$z-logo: 15;
 
 //Colors
-$bg-color: #fff;
+$bg-color: #FFF;
 
-$primary: #f16d7f;
-$primary-light: #f8f3f4;
-$primary-dark: #ef5b70;
+$primary: #F16D7F;
+$primary-light: #F8F3F4;
+$primary-dark: #EF5B70;
 
-$grey: #e6e6e6;
-$grey-light: #f8f8f8;
-$grey-dark: #e1e1e1;
+$grey: #E6E6E6;
+$grey-light: #F8F8F8;
+$grey-dark: #E1E1E1;
 
 $dark: #222222;
-$light: #ffffff;
+$light: #FFFFFF;
 
 
 @function numbToPx($px) {
-  $result: $px*1px;
-  @return $result;
+	$result: $px*1px;
+	@return $result;
 }
+
 
 //Percent
 @function percent($px, $from) {
-  $result: math.div($px, $from) * 100%;
-  @return $result;
+	$result: math.div($px, $from) * 100%;
+	@return $result;
 }
+
 
 //REM
 @function rem($px) {
-  $result: math.div($px, 16) + rem;
-  @return $result;
+	$result: math.div($px, 16) + rem;
+	@return $result;
 }
+
 
 //EM
 @function em($px, $current: 16) {
-  $result: math.div($px, $current) + em;
-  @return $result;
+	$result: math.div($px, $current) + em;
+	@return $result;
 }
 
 

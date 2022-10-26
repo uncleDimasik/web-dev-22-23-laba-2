@@ -8,7 +8,7 @@ const uglify = require('gulp-uglify-es').default;
 const autoprefixer = require('gulp-autoprefixer');
 const imagemin = require('gulp-imagemin');
 const del = require('del');
-
+const fileInclude = require('gulp-file-include');
 
 function browsersync() {
     browserSync.init({
@@ -52,6 +52,13 @@ function scripts() {
 }
 
 
+function include() {
+    return src(['app/html/pages/*.html'])
+        .pipe(fileInclude())
+        .pipe(dest('app'))
+        .pipe(browserSync.stream())
+}
+
 function styles() {
     return src('app/scss/style.scss')
         .pipe(scss({outputStyle: 'compressed'}))
@@ -77,7 +84,10 @@ function build() {
 function watching() {
     watch(['app/scss/**/*.scss'], styles);
     watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
-    watch(['app/*.html']).on('change', browserSync.reload);
+    watch(['app/**/*.html']).on('change', () => {
+        include();
+        browserSync.reload();
+    });
 }
 
 exports.styles = styles;
@@ -89,6 +99,6 @@ exports.cleanDist = cleanDist;
 
 
 exports.build = series(cleanDist, images, build);
-exports.default = parallel(styles, scripts, browsersync, watching);
+exports.default = parallel(include, styles, scripts, browsersync, watching);
 
 

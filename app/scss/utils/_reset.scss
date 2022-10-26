@@ -70,7 +70,11 @@ select {
 	-moz-appearance: none;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	&::-ms-expand { display: none };
+
+	&::-ms-expand {
+		display: none
+	}
+;
 	box-sizing: border-box;
 	background-color: transparent;
 	border: none;
