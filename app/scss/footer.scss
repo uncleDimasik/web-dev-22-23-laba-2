@@ -60,7 +60,7 @@
 	}
 
 	&__description {
-		padding-top: rem(28);
+		@include adaptiveValue('padding-top', 28, 14, $screen-lg, $screen-md, 1);
 		font-size: rem(14);
 		color: $grey-darker;
 		letter-spacing: em(0.3, 14);

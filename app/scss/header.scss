@@ -1,5 +1,6 @@
 @use 'utils/vars'as *;
 @use 'utils/mixins'as *;
+@use "sass:math";
 
 
 .header {
@@ -177,6 +178,11 @@
 
 
 .catalog {
+
+	@include md-max() {
+		width: 100%;
+	}
+
 	&__list {
 		display: flex;
 		row-gap: rem(5);
@@ -186,17 +192,29 @@
 		text-transform: uppercase;
 		@include md-max {
 			flex-direction: column;
-			row-gap: rem(10);
+			line-height: math.div(25, 14);
+			//row-gap: rem(10);
 			align-items: center;
-			width: 100%;
 		}
+	}
+
+	&__item {
+		@include md-max() {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
 	}
 
 	&__link {
 		font-weight: $fw-bold;
 		color: $dark;
 		@include md-max() {
-			@include adaptiveValue('font-size', 20, 14, $screen-md, $minWidth, 1)
+			@include adaptiveValue('font-size', 20, 14, $screen-md, $minWidth, 1);
+			width: 100%;
+			text-align: center;
 		}
 	}
 }
