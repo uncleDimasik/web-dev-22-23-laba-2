@@ -173,6 +173,7 @@
 		align-items: center;
 		justify-content: center;
 		padding: rem(10) 0;
+		margin-bottom: rem(4);
 	}
 }
 
@@ -211,10 +212,51 @@
 	&__link {
 		font-weight: $fw-bold;
 		color: $dark;
+		position: relative;
 		@include md-max() {
 			@include adaptiveValue('font-size', 20, 14, $screen-md, $minWidth, 1);
 			width: 100%;
 			text-align: center;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			width: 0;
+			height: rem(2);
+			left: 50%;
+			bottom: rem(-19);
+			background-color: $primary;
+			transition: all 0.2s ease 0s;
+		}
+
+		@media (hover: hover) {
+			&:hover {
+
+				&::after {
+					content: '';
+					position: absolute;
+					width: 100%;
+					height: rem(4);
+					left: 0;
+					bottom: rem(-19);
+					background-color: $primary;
+				}
+			}
+		}
+
+		&.active {
+			@include md-min {
+				&::after {
+					content: '';
+					bottom: rem(-19);
+					width: 100%;
+					left: 0;
+					position: absolute;
+					height: rem(4);
+					background-color: $primary;
+				}
+			}
 		}
 	}
 }

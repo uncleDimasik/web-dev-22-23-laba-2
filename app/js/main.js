@@ -7,6 +7,7 @@ $(function () {
         $('.wrapper').toggleClass('_lock');
         $('.icon-menu').toggleClass('menu-open');
         $('.menu__body').toggleClass('menu-open');
+        $('.catalog__item').toggleClass('active');
         $('.review-slider').toggle('review-slider');
     })
     $('.review-slider').slick({

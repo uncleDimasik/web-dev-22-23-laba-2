@@ -1,0 +1,65 @@
+@use 'utils/vars'as *;
+@use 'utils/mixins'as *;
+@use "sass:math";
+
+
+.breadcrumbs-wrapper {
+	background-color: $primary-light;
+
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: rem(20);
+		@include adaptiveValue('padding-top', 65, 10, $screen-lg, $screen-sm, 1);
+		@include adaptiveValue('padding-bottom', 65, 10, $screen-lg, $screen-sm, 1);
+	}
+
+
+	// .breadcrumbs-wrapper__current-link
+
+	&__current-link {
+		color: $primary-dark;
+		@include adaptiveValue('font-size', 24, 16, $screen-lg, $screen-sm, 1);
+		text-transform: uppercase;
+		font-weight: $fw-bold;
+		@include sm-max {
+			display: none;
+		}
+	}
+
+	// .breadcrumbs-wrapper__breadcrumbs
+	&__breadcrumbs {
+
+	}
+}
+
+
+.breadcrumbs {
+	font-size: rem(14);
+	text-transform: uppercase;
+	list-style: none;
+	white-space: nowrap;
+	overflow: auto;
+
+	li {
+		display: inline;
+	}
+
+	li + li {
+		&:before {
+			color: $grey-darker;
+			content: "/\00a0";
+		}
+	}
+
+	a {
+		color: $grey-darker;
+		text-decoration: none;
+
+		&.current-page {
+			color: $primary-dark;
+		}
+	}
+}
