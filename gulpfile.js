@@ -43,6 +43,7 @@ function images() {
 function scripts() {
     return src([
         'node_modules/jquery/dist/jquery.js',
+        'node_modules/slick-carousel/slick/slick.min.js',
         'app/js/main.js'
     ])
         .pipe(concat('main.min.js'))
@@ -58,6 +59,7 @@ function include() {
         .pipe(dest('app'))
         .pipe(browserSync.stream())
 }
+
 
 function styles() {
     return src('app/scss/style.scss')

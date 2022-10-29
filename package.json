@@ -19,6 +19,7 @@
     "gulp-uglify-es": "^3.0.0",
     "jquery": "^3.6.1",
     "sass": "^1.54.9",
+    "slick-carousel": "^1.8.1",
     "gulp-file-include": "^2.3.0"
   }
 }
