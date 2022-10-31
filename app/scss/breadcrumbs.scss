@@ -49,13 +49,13 @@
 
 	li + li {
 		&:before {
-			color: $grey-darker;
+			color: $grey-darkest;
 			content: "/\00a0";
 		}
 	}
 
 	a {
-		color: $grey-darker;
+		color: $grey-darkest;
 		text-decoration: none;
 
 		&.current-page {

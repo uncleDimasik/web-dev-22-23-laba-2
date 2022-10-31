@@ -24,8 +24,7 @@ body {
 }
 
 
-.main,
-.article {
+main {
 	flex: 1 0 auto;
 }
 
@@ -42,6 +41,15 @@ body {
 }
 
 
+
+
+.button-solid {
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+	justify-content: center;
+	color: inherit;
+}
 
 
 

@@ -62,7 +62,7 @@
 	&__description {
 		@include adaptiveValue('padding-top', 28, 14, $screen-lg, $screen-md, 1);
 		font-size: rem(14);
-		color: $grey-darker;
+		color: $grey-darkest;
 		letter-spacing: em(0.3, 14);
 		line-height: math.div(24, 14);
 
@@ -138,7 +138,7 @@
 
 	// .menu-footer__link
 	&__link {
-		color: $grey-darker;
+		color: $grey-darkest;
 		font-size: rem(16);
 		@include md-max {
 			width: 100%;
@@ -167,7 +167,7 @@
 
 	// .footer-social__copyright
 	&__copyright {
-		color: $grey-darker;
+		color: $grey-darkest;
 		font-size: rem(16);
 	}
 
@@ -206,7 +206,7 @@
 	}
 
 	&__icon {
-		fill: $grey-darker;
+		fill: $grey-darkest;
 		width: rem(32);
 		height: rem(32);
 		padding: rem(8);
