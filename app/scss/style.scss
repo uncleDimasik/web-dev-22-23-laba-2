@@ -34,6 +34,12 @@
 		display: grid;
 		grid-template-columns: rem(262) 1fr;
 		gap: rem(30);
+		@include adaptiveValue('padding-top', 50, 30, $screen-lg, $screen-md, 1);
+		@include adaptiveValue('padding-bottom', 50, 30, $screen-lg, $screen-md, 1);
+		@include md-max {
+			grid-template-columns:none;
+			gap: rem(0);
+		}
 	}
 
 	// .product__filter
@@ -207,13 +213,22 @@
 	display: flex;
 	align-items: center;
 	background-color: #F3F3F3;
-	height: rem(50);
+	min-height: rem(50);
 	padding: rem(10);
+	flex-wrap: wrap;
+	//margin-bottom: rem(20);
+	@include adaptiveValue('margin-bottom', 40, 20, $screen-lg, $screen-sm, 1);
+	@include adaptiveValue('margin-top', 30, 10, $screen-lg, $screen-sm, 1);
+	@include md-max {
+		justify-content: center;
+		gap: rem(10);
+		&__number-picker {
+			margin-left: 0 !important;
+		}
+	}
 
 	&__number-picker {
-		@include md-min {
-			@include adaptiveValue("margin-left", 26, 0);
-		}
+		margin-left: rem(26);
 	}
 
 }
@@ -264,6 +279,7 @@
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(rem(262), 1fr));
 	gap: rem(30);
+	@include adaptiveValue('padding-bottom', 50, 10, $screen-lg, $screen-md, 1);
 	// .catalog-product__item
 	&__item {
 		justify-self: center;
@@ -359,7 +375,11 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-
+	flex-wrap: wrap;
+	gap: rem(10);
+	@include sm-max {
+		justify-content: center;
+	}
 	// .footer-product__pagination
 	&__pagination {
 	}
