@@ -5,65 +5,304 @@
 <div class="wrapper">
     @@include('../components/_header.html')
     @@include('../components/_breadcrumbs.html')
-    <main class="page page__home">
-        <div class="page__inner">
-            <section class="section">
-                <div style="font-weight: 400">This is weight 400</div>
-                <div style="font-weight: 700">This is weight 700</div>
-                <div style="font-weight: 900">This is weight 900</div>
-            </section>
-            <section class="section">
-                <div style="font-weight: 400">This is weight 400</div>
-                <div style="font-weight: 700">This is weight 700</div>
-                <div style="font-weight: 900">This is weight 900</div>
-            </section>
-            <section class="section">
-                <div style="font-weight: 400">This is weight 400</div>
-                <div style="font-weight: 700">This is weight 700</div>
-                <div style="font-weight: 900">This is weight 900</div>
-            </section>
-            <section class="section">
-                <div style="font-weight: 400">This is weight 400</div>
-                <div style="font-weight: 700">This is weight 700</div>
-                <div style="font-weight: 900">This is weight 900</div>
-            </section>
-            <section class="section">
-                <div style="font-weight: 400">This is weight 400</div>
-                <div style="font-weight: 700">This is weight 700</div>
-                <div style="font-weight: 900">This is weight 900</div>
-            </section>
-            <section class="section">
-                <div style="font-weight: 400">This is weight 400</div>
-                <div style="font-weight: 700">This is weight 700</div>
-                <div style="font-weight: 900">This is weight 900</div>
-            </section>
-            <section class="section">
-                <div style="font-weight: 400">This is weight 400</div>
-                <div style="font-weight: 700">This is weight 700</div>
-                <div style="font-weight: 900">This is weight 900</div>
-            </section>
-            <section class="section">
-                <div style="font-weight: 400">This is weight 400</div>
-                <div style="font-weight: 700">This is weight 700</div>
-                <div style="font-weight: 900">This is weight 900</div>
-            </section>
-            <section class="section">
-                <div style="font-weight: 400">This is weight 400</div>
-                <div style="font-weight: 700">This is weight 700</div>
-                <div style="font-weight: 900">This is weight 900</div>
-            </section>
-            <section class="section">
-                <div style="font-weight: 400">This is weight 400</div>
-                <div style="font-weight: 700">This is weight 700</div>
-                <div style="font-weight: 900">This is weight 900</div>
-            </section>
-            <section class="section">
-                <div style="font-weight: 400">This is weight 400</div>
-                <div style="font-weight: 700">This is weight 700</div>
-                <div style="font-weight: 900">This is weight 900</div>
-            </section>
+    <main class="page home">
+        <div class="home__inner">
+            <div class="home__top-banner top-banner-home">
+                <img src="images/index-top-banner.jpg" alt="Banner" class="top-banner-home__img">
+                <div class="container">
+                    <div class="top-banner-home__inner">
+                        <div class="top-banner-home__title-wrapper">
+                            <div class="top-banner-home__title-main">THE BRAND</div>
+                            <div class="top-banner-home__title-second">OF LUXURIOUS <span>FASHION</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="home__discount-grid discount-grid">
+                    <div class="discount-grid__item-big">
+                        <img src="images/index-grid-1.jpg" alt="" class="discount-grid__img">
+                        <div class="discount-grid__title-wrapper">
+                            <div class="discount-grid__description">30% OFFER</div>
+                            <div class="discount-grid__title">FOR MEN</div>
+                        </div>
+                    </div>
+                    <div class="discount-grid__item">
+                        <div class="discount-grid__title-wrapper">
+                            <img src="images/index-grid-2.jpg" alt="" class="discount-grid__img">
+                            <div class="discount-grid__description">30% OFFER</div>
+                            <div class="discount-grid__title">FOR MEN</div>
+                        </div>
+                    </div>
+                    <div class="discount-grid__item-big">
+                        <div class="discount-grid__title-wrapper">
+                            <img src="images/index-grid-2.jpg" alt="" class="discount-grid__img">
+                            <div class="discount-grid__description">30% OFFER</div>
+                            <div class="discount-grid__title">FOR MEN</div>
+                        </div>
+                    </div>
+                    <div class="discount-grid__item">
+                        <div class="discount-grid__title-wrapper">
+                            <img src="images/index-grid-2.jpg" alt="" class="discount-grid__img">
+                            <div class="discount-grid__description">30% OFFER</div>
+                            <div class="discount-grid__title">FOR MEN</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home__featured-items featured-items-home">
+                    <span class="featured-items-home__title">
+                        Featured Items
+                    </span>
+                    <span class="featured-items-home__sub-title">
+                        Shop for items based on what we featured in this week
+                    </span>
+                    <div class="featured-items-home__product-items-grid">
+                        <article class="catalog-product__item product-item">
+                            <div class="product-item__preview-wrapper">
+                                <div class="product-item__color-filter">
+                                    <button class="product-item__button-outline">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 29"
+                                             class="product-item__button-icon">
+                                            <path d="M31.899,7.565 L26.493,19.977 C26.296,20.410 25.882,20.686 25.409,20.686 L10.554,20.686 C10.021,20.686 9.548,20.331 9.410,19.819 L4.577,2.364 L1.184,2.364 C0.533,2.364 -0.000,1.832 -0.000,1.182 C-0.000,0.532 0.533,-0.000 1.184,-0.000 L5.464,-0.000 C5.997,-0.000 6.471,0.354 6.609,0.867 L11.442,18.322 L24.620,18.322 L28.999,8.274 L14.401,8.274 C13.750,8.274 13.217,7.742 13.217,7.092 C13.217,6.442 13.750,5.910 14.401,5.910 L30.814,5.910 C31.208,5.910 31.583,6.107 31.800,6.442 C32.017,6.777 32.057,7.191 31.899,7.565 ZM9.429,23.641 C10.909,23.641 12.112,24.843 12.112,26.320 C12.112,27.798 10.909,29.000 9.429,29.000 C7.950,29.000 6.747,27.798 6.747,26.320 C6.747,24.843 7.950,23.641 9.429,23.641 ZM26.020,23.641 C27.500,23.543 28.782,24.666 28.881,26.124 C28.920,26.852 28.703,27.542 28.230,28.074 C27.756,28.626 27.105,28.941 26.395,29.000 C26.336,29.000 26.257,29.000 26.198,29.000 C24.797,29.000 23.633,27.897 23.535,26.498 C23.436,25.040 24.541,23.740 26.020,23.641 Z"/>
+                                        </svg>
+                                        <span>Add to Card</span>
+                                    </button>
+                                </div>
+                                <a href="#">
+                                    <img src="images/product-preview.jpg" alt="preview"
+                                         class="product-item__preview-image">
+                                </a>
+                            </div>
+                            <div class="product-item__description">
+                                <a href="#" class="product-item__title">Mango People T-shirt</a>
+                                <p class="product-item__price">$52.00</p>
+                            </div>
+                        </article>
+                        <article class="catalog-product__item product-item">
+                            <div class="product-item__preview-wrapper">
+                                <div class="product-item__color-filter">
+                                    <button class="product-item__button-outline">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 29"
+                                             class="product-item__button-icon">
+                                            <path d="M31.899,7.565 L26.493,19.977 C26.296,20.410 25.882,20.686 25.409,20.686 L10.554,20.686 C10.021,20.686 9.548,20.331 9.410,19.819 L4.577,2.364 L1.184,2.364 C0.533,2.364 -0.000,1.832 -0.000,1.182 C-0.000,0.532 0.533,-0.000 1.184,-0.000 L5.464,-0.000 C5.997,-0.000 6.471,0.354 6.609,0.867 L11.442,18.322 L24.620,18.322 L28.999,8.274 L14.401,8.274 C13.750,8.274 13.217,7.742 13.217,7.092 C13.217,6.442 13.750,5.910 14.401,5.910 L30.814,5.910 C31.208,5.910 31.583,6.107 31.800,6.442 C32.017,6.777 32.057,7.191 31.899,7.565 ZM9.429,23.641 C10.909,23.641 12.112,24.843 12.112,26.320 C12.112,27.798 10.909,29.000 9.429,29.000 C7.950,29.000 6.747,27.798 6.747,26.320 C6.747,24.843 7.950,23.641 9.429,23.641 ZM26.020,23.641 C27.500,23.543 28.782,24.666 28.881,26.124 C28.920,26.852 28.703,27.542 28.230,28.074 C27.756,28.626 27.105,28.941 26.395,29.000 C26.336,29.000 26.257,29.000 26.198,29.000 C24.797,29.000 23.633,27.897 23.535,26.498 C23.436,25.040 24.541,23.740 26.020,23.641 Z"/>
+                                        </svg>
+                                        <span>Add to Card</span>
+                                    </button>
+                                </div>
+                                <a href="#">
+                                    <img src="images/product-preview.jpg" alt="preview"
+                                         class="product-item__preview-image">
+                                </a>
+                            </div>
+                            <div class="product-item__description">
+                                <a href="#" class="product-item__title">Mango People T-shirt</a>
+                                <p class="product-item__price">$52.00</p>
+                            </div>
+                        </article>
+                        <article class="catalog-product__item product-item">
+                            <div class="product-item__preview-wrapper">
+                                <div class="product-item__color-filter">
+                                    <button class="product-item__button-outline">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 29"
+                                             class="product-item__button-icon">
+                                            <path d="M31.899,7.565 L26.493,19.977 C26.296,20.410 25.882,20.686 25.409,20.686 L10.554,20.686 C10.021,20.686 9.548,20.331 9.410,19.819 L4.577,2.364 L1.184,2.364 C0.533,2.364 -0.000,1.832 -0.000,1.182 C-0.000,0.532 0.533,-0.000 1.184,-0.000 L5.464,-0.000 C5.997,-0.000 6.471,0.354 6.609,0.867 L11.442,18.322 L24.620,18.322 L28.999,8.274 L14.401,8.274 C13.750,8.274 13.217,7.742 13.217,7.092 C13.217,6.442 13.750,5.910 14.401,5.910 L30.814,5.910 C31.208,5.910 31.583,6.107 31.800,6.442 C32.017,6.777 32.057,7.191 31.899,7.565 ZM9.429,23.641 C10.909,23.641 12.112,24.843 12.112,26.320 C12.112,27.798 10.909,29.000 9.429,29.000 C7.950,29.000 6.747,27.798 6.747,26.320 C6.747,24.843 7.950,23.641 9.429,23.641 ZM26.020,23.641 C27.500,23.543 28.782,24.666 28.881,26.124 C28.920,26.852 28.703,27.542 28.230,28.074 C27.756,28.626 27.105,28.941 26.395,29.000 C26.336,29.000 26.257,29.000 26.198,29.000 C24.797,29.000 23.633,27.897 23.535,26.498 C23.436,25.040 24.541,23.740 26.020,23.641 Z"/>
+                                        </svg>
+                                        <span>Add to Card</span>
+                                    </button>
+                                </div>
+                                <a href="#">
+                                    <img src="images/product-preview.jpg" alt="preview"
+                                         class="product-item__preview-image">
+                                </a>
+                            </div>
+                            <div class="product-item__description">
+                                <a href="#" class="product-item__title">Mango People T-shirt</a>
+                                <p class="product-item__price">$52.00</p>
+                            </div>
+                        </article>
+                        <article class="catalog-product__item product-item">
+                            <div class="product-item__preview-wrapper">
+                                <div class="product-item__color-filter">
+                                    <button class="product-item__button-outline">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 29"
+                                             class="product-item__button-icon">
+                                            <path d="M31.899,7.565 L26.493,19.977 C26.296,20.410 25.882,20.686 25.409,20.686 L10.554,20.686 C10.021,20.686 9.548,20.331 9.410,19.819 L4.577,2.364 L1.184,2.364 C0.533,2.364 -0.000,1.832 -0.000,1.182 C-0.000,0.532 0.533,-0.000 1.184,-0.000 L5.464,-0.000 C5.997,-0.000 6.471,0.354 6.609,0.867 L11.442,18.322 L24.620,18.322 L28.999,8.274 L14.401,8.274 C13.750,8.274 13.217,7.742 13.217,7.092 C13.217,6.442 13.750,5.910 14.401,5.910 L30.814,5.910 C31.208,5.910 31.583,6.107 31.800,6.442 C32.017,6.777 32.057,7.191 31.899,7.565 ZM9.429,23.641 C10.909,23.641 12.112,24.843 12.112,26.320 C12.112,27.798 10.909,29.000 9.429,29.000 C7.950,29.000 6.747,27.798 6.747,26.320 C6.747,24.843 7.950,23.641 9.429,23.641 ZM26.020,23.641 C27.500,23.543 28.782,24.666 28.881,26.124 C28.920,26.852 28.703,27.542 28.230,28.074 C27.756,28.626 27.105,28.941 26.395,29.000 C26.336,29.000 26.257,29.000 26.198,29.000 C24.797,29.000 23.633,27.897 23.535,26.498 C23.436,25.040 24.541,23.740 26.020,23.641 Z"/>
+                                        </svg>
+                                        <span>Add to Card</span>
+                                    </button>
+                                </div>
+                                <a href="#">
+                                    <img src="images/product-preview.jpg" alt="preview"
+                                         class="product-item__preview-image">
+                                </a>
+                            </div>
+                            <div class="product-item__description">
+                                <a href="#" class="product-item__title">Mango People T-shirt</a>
+                                <p class="product-item__price">$52.00</p>
+                            </div>
+                        </article>
+                        <article class="catalog-product__item product-item">
+                            <div class="product-item__preview-wrapper">
+                                <div class="product-item__color-filter">
+                                    <button class="product-item__button-outline">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 29"
+                                             class="product-item__button-icon">
+                                            <path d="M31.899,7.565 L26.493,19.977 C26.296,20.410 25.882,20.686 25.409,20.686 L10.554,20.686 C10.021,20.686 9.548,20.331 9.410,19.819 L4.577,2.364 L1.184,2.364 C0.533,2.364 -0.000,1.832 -0.000,1.182 C-0.000,0.532 0.533,-0.000 1.184,-0.000 L5.464,-0.000 C5.997,-0.000 6.471,0.354 6.609,0.867 L11.442,18.322 L24.620,18.322 L28.999,8.274 L14.401,8.274 C13.750,8.274 13.217,7.742 13.217,7.092 C13.217,6.442 13.750,5.910 14.401,5.910 L30.814,5.910 C31.208,5.910 31.583,6.107 31.800,6.442 C32.017,6.777 32.057,7.191 31.899,7.565 ZM9.429,23.641 C10.909,23.641 12.112,24.843 12.112,26.320 C12.112,27.798 10.909,29.000 9.429,29.000 C7.950,29.000 6.747,27.798 6.747,26.320 C6.747,24.843 7.950,23.641 9.429,23.641 ZM26.020,23.641 C27.500,23.543 28.782,24.666 28.881,26.124 C28.920,26.852 28.703,27.542 28.230,28.074 C27.756,28.626 27.105,28.941 26.395,29.000 C26.336,29.000 26.257,29.000 26.198,29.000 C24.797,29.000 23.633,27.897 23.535,26.498 C23.436,25.040 24.541,23.740 26.020,23.641 Z"/>
+                                        </svg>
+                                        <span>Add to Card</span>
+                                    </button>
+                                </div>
+                                <a href="#">
+                                    <img src="images/product-preview.jpg" alt="preview"
+                                         class="product-item__preview-image">
+                                </a>
+                            </div>
+                            <div class="product-item__description">
+                                <a href="#" class="product-item__title">Mango People T-shirt</a>
+                                <p class="product-item__price">$52.00</p>
+                            </div>
+                        </article>
+                        <article class="catalog-product__item product-item">
+                            <div class="product-item__preview-wrapper">
+                                <div class="product-item__color-filter">
+                                    <button class="product-item__button-outline">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 29"
+                                             class="product-item__button-icon">
+                                            <path d="M31.899,7.565 L26.493,19.977 C26.296,20.410 25.882,20.686 25.409,20.686 L10.554,20.686 C10.021,20.686 9.548,20.331 9.410,19.819 L4.577,2.364 L1.184,2.364 C0.533,2.364 -0.000,1.832 -0.000,1.182 C-0.000,0.532 0.533,-0.000 1.184,-0.000 L5.464,-0.000 C5.997,-0.000 6.471,0.354 6.609,0.867 L11.442,18.322 L24.620,18.322 L28.999,8.274 L14.401,8.274 C13.750,8.274 13.217,7.742 13.217,7.092 C13.217,6.442 13.750,5.910 14.401,5.910 L30.814,5.910 C31.208,5.910 31.583,6.107 31.800,6.442 C32.017,6.777 32.057,7.191 31.899,7.565 ZM9.429,23.641 C10.909,23.641 12.112,24.843 12.112,26.320 C12.112,27.798 10.909,29.000 9.429,29.000 C7.950,29.000 6.747,27.798 6.747,26.320 C6.747,24.843 7.950,23.641 9.429,23.641 ZM26.020,23.641 C27.500,23.543 28.782,24.666 28.881,26.124 C28.920,26.852 28.703,27.542 28.230,28.074 C27.756,28.626 27.105,28.941 26.395,29.000 C26.336,29.000 26.257,29.000 26.198,29.000 C24.797,29.000 23.633,27.897 23.535,26.498 C23.436,25.040 24.541,23.740 26.020,23.641 Z"/>
+                                        </svg>
+                                        <span>Add to Card</span>
+                                    </button>
+                                </div>
+                                <a href="#">
+                                    <img src="images/product-preview.jpg" alt="preview"
+                                         class="product-item__preview-image">
+                                </a>
+                            </div>
+                            <div class="product-item__description">
+                                <a href="#" class="product-item__title">Mango People T-shirt</a>
+                                <p class="product-item__price">$52.00</p>
+                            </div>
+                        </article>
+                        <article class="catalog-product__item product-item">
+                            <div class="product-item__preview-wrapper">
+                                <div class="product-item__color-filter">
+                                    <button class="product-item__button-outline">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 29"
+                                             class="product-item__button-icon">
+                                            <path d="M31.899,7.565 L26.493,19.977 C26.296,20.410 25.882,20.686 25.409,20.686 L10.554,20.686 C10.021,20.686 9.548,20.331 9.410,19.819 L4.577,2.364 L1.184,2.364 C0.533,2.364 -0.000,1.832 -0.000,1.182 C-0.000,0.532 0.533,-0.000 1.184,-0.000 L5.464,-0.000 C5.997,-0.000 6.471,0.354 6.609,0.867 L11.442,18.322 L24.620,18.322 L28.999,8.274 L14.401,8.274 C13.750,8.274 13.217,7.742 13.217,7.092 C13.217,6.442 13.750,5.910 14.401,5.910 L30.814,5.910 C31.208,5.910 31.583,6.107 31.800,6.442 C32.017,6.777 32.057,7.191 31.899,7.565 ZM9.429,23.641 C10.909,23.641 12.112,24.843 12.112,26.320 C12.112,27.798 10.909,29.000 9.429,29.000 C7.950,29.000 6.747,27.798 6.747,26.320 C6.747,24.843 7.950,23.641 9.429,23.641 ZM26.020,23.641 C27.500,23.543 28.782,24.666 28.881,26.124 C28.920,26.852 28.703,27.542 28.230,28.074 C27.756,28.626 27.105,28.941 26.395,29.000 C26.336,29.000 26.257,29.000 26.198,29.000 C24.797,29.000 23.633,27.897 23.535,26.498 C23.436,25.040 24.541,23.740 26.020,23.641 Z"/>
+                                        </svg>
+                                        <span>Add to Card</span>
+                                    </button>
+                                </div>
+                                <a href="#">
+                                    <img src="images/product-preview.jpg" alt="preview"
+                                         class="product-item__preview-image">
+                                </a>
+                            </div>
+                            <div class="product-item__description">
+                                <a href="#" class="product-item__title">Mango People T-shirt</a>
+                                <p class="product-item__price">$52.00</p>
+                            </div>
+                        </article>
+                        <article class="catalog-product__item product-item">
+                            <div class="product-item__preview-wrapper">
+                                <div class="product-item__color-filter">
+                                    <button class="product-item__button-outline">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 29"
+                                             class="product-item__button-icon">
+                                            <path d="M31.899,7.565 L26.493,19.977 C26.296,20.410 25.882,20.686 25.409,20.686 L10.554,20.686 C10.021,20.686 9.548,20.331 9.410,19.819 L4.577,2.364 L1.184,2.364 C0.533,2.364 -0.000,1.832 -0.000,1.182 C-0.000,0.532 0.533,-0.000 1.184,-0.000 L5.464,-0.000 C5.997,-0.000 6.471,0.354 6.609,0.867 L11.442,18.322 L24.620,18.322 L28.999,8.274 L14.401,8.274 C13.750,8.274 13.217,7.742 13.217,7.092 C13.217,6.442 13.750,5.910 14.401,5.910 L30.814,5.910 C31.208,5.910 31.583,6.107 31.800,6.442 C32.017,6.777 32.057,7.191 31.899,7.565 ZM9.429,23.641 C10.909,23.641 12.112,24.843 12.112,26.320 C12.112,27.798 10.909,29.000 9.429,29.000 C7.950,29.000 6.747,27.798 6.747,26.320 C6.747,24.843 7.950,23.641 9.429,23.641 ZM26.020,23.641 C27.500,23.543 28.782,24.666 28.881,26.124 C28.920,26.852 28.703,27.542 28.230,28.074 C27.756,28.626 27.105,28.941 26.395,29.000 C26.336,29.000 26.257,29.000 26.198,29.000 C24.797,29.000 23.633,27.897 23.535,26.498 C23.436,25.040 24.541,23.740 26.020,23.641 Z"/>
+                                        </svg>
+                                        <span>Add to Card</span>
+                                    </button>
+                                </div>
+                                <a href="#">
+                                    <img src="images/product-preview.jpg" alt="preview"
+                                         class="product-item__preview-image">
+                                </a>
+                            </div>
+                            <div class="product-item__description">
+                                <a href="#" class="product-item__title">Mango People T-shirt</a>
+                                <p class="product-item__price">$52.00</p>
+                            </div>
+                        </article>
+                    </div>
+                    <button class="featured-items-home__button button-solid">
+                        Browse All Product
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             class="featured-items-home__button-icon"
+                             viewBox="0 0 512 512">
+                            <path d="M334.5 414c8.8 3.8 19 2 26-4.6l144-136c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22l0 88L32 208c-17.7 0-32 14.3-32 32l0 32c0 17.7 14.3 32 32 32l288 0 0 88c0 9.6 5.7 18.2 14.5 22z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="home__bottom-banner bottom-banner-home">
+                    <div class="bottom-banner-home__title-wrapper">
+                        <div class="bottom-banner-home__title">
+                            30% <span>OFFER</span>
+                        </div>
+                        <div class="bottom-banner-home__sub-title">
+                            FOR WOMEN
+                        </div>
+                    </div>
+                    <div class="bottom-banner-home__items-wrapper">
+                        <div class="bottom-banner-home__item">
+                            <div>
+                                <svg
+                                        class="bottom-banner-home__icon"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="46px" height="32px">
+                                    <path d="M44.088,27.238 L41.274,27.238 C40.830,29.898 38.537,31.932 35.781,31.932 C33.025,31.932 30.731,29.898 30.287,27.238 L14.810,27.238 C14.366,29.898 12.073,31.932 9.317,31.932 C6.561,31.932 4.267,29.898 3.823,27.238 L1.886,27.238 C0.863,27.238 0.030,26.397 0.030,25.362 L0.030,1.872 C0.030,0.837 0.863,-0.004 1.886,-0.004 L27.437,-0.004 C28.461,-0.004 29.294,0.837 29.294,1.872 L29.294,3.777 L36.414,3.777 C36.496,3.777 36.576,3.788 36.651,3.808 C38.956,4.011 40.108,5.213 41.329,7.271 L44.888,13.365 C44.972,13.509 45.017,13.674 45.017,13.842 L45.017,26.300 C45.017,26.818 44.601,27.238 44.088,27.238 ZM9.317,30.055 C11.366,30.055 13.032,28.371 13.032,26.300 C13.032,24.230 11.366,22.545 9.317,22.545 C7.268,22.545 5.601,24.230 5.601,26.300 C5.601,28.371 7.268,30.055 9.317,30.055 ZM27.437,1.872 L1.886,1.872 L1.886,25.362 L3.823,25.362 C4.267,22.702 6.561,20.669 9.317,20.669 C12.073,20.669 14.367,22.702 14.810,25.362 L27.437,25.362 L27.437,1.872 ZM35.781,30.055 C37.829,30.055 39.496,28.371 39.496,26.300 C39.496,24.230 37.829,22.545 35.781,22.545 C33.732,22.545 32.065,24.230 32.065,26.300 C32.065,28.371 33.732,30.055 35.781,30.055 ZM39.837,8.409 L32.939,8.409 L32.939,12.168 C32.939,12.696 33.364,13.125 33.886,13.125 C33.951,13.125 34.014,13.132 34.076,13.145 L42.603,13.145 L39.837,8.409 ZM43.160,16.022 L42.281,16.022 C41.769,16.022 41.352,16.442 41.352,16.960 L41.352,17.868 L43.160,17.868 L43.160,16.022 ZM43.160,19.744 L40.424,19.744 C39.912,19.744 39.496,19.324 39.496,18.807 L39.496,16.959 C39.496,16.209 39.789,15.526 40.265,15.021 L33.886,15.021 C33.807,15.021 33.730,15.011 33.656,14.992 C32.217,14.874 31.082,13.652 31.082,12.168 L31.082,7.471 C31.082,6.953 31.498,6.533 32.011,6.533 L38.494,6.533 C37.841,5.906 37.101,5.654 35.916,5.654 L29.294,5.654 L29.294,25.362 L30.287,25.362 C30.730,22.702 33.024,20.669 35.781,20.669 C38.537,20.669 40.830,22.702 41.274,25.362 L43.160,25.362 L43.160,19.744 ZM35.781,23.522 C36.293,23.522 36.709,23.942 36.709,24.460 C36.709,24.978 36.293,25.399 35.781,25.399 C35.288,25.399 34.888,25.803 34.888,26.300 C34.888,26.797 35.288,27.202 35.781,27.202 C36.272,27.202 36.673,26.797 36.673,26.300 C36.673,25.782 37.088,25.362 37.601,25.362 C38.113,25.362 38.529,25.782 38.529,26.300 C38.529,27.832 37.296,29.078 35.781,29.078 C34.265,29.078 33.031,27.832 33.031,26.300 C33.031,24.768 34.265,23.522 35.781,23.522 ZM3.782,4.715 C3.782,4.197 4.197,3.777 4.710,3.777 L24.613,3.777 C25.126,3.777 25.542,4.197 25.542,4.715 C25.542,5.234 25.126,5.654 24.613,5.654 L4.710,5.654 C4.197,5.654 3.782,5.234 3.782,4.715 ZM9.317,23.522 C9.830,23.522 10.245,23.942 10.245,24.460 C10.245,24.978 9.830,25.399 9.317,25.399 C8.825,25.399 8.424,25.803 8.424,26.300 C8.424,26.797 8.825,27.202 9.317,27.202 C9.809,27.202 10.209,26.797 10.209,26.300 C10.209,25.782 10.624,25.362 11.137,25.362 C11.650,25.362 12.065,25.782 12.065,26.300 C12.065,27.832 10.832,29.078 9.317,29.078 C7.801,29.078 6.568,27.832 6.568,26.300 C6.568,24.768 7.801,23.522 9.317,23.522 Z"/>
+                                </svg>
+                            </div>
+                            <div class="bottom-banner-home__item-text-wrapper">
+                                <span class="bottom-banner-home__item-title">
+                                    Free Delivery
+                                </span>
+                                <span class="bottom-banner-home__item-description">
+                                    Worldwide delivery on all. Authorit tively morph next-generation
+                                    innov tion with extensive models.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="bottom-banner-home__item">
+                            <div>
+                                <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="bottom-banner-home__icon"
+                                        width="40px" height="40px">
+                                    <path
+                                            d="M36.576,16.992 L39.987,19.956 L36.576,22.924 L38.784,26.890 L34.575,28.491 L35.307,32.985 L30.813,33.030 L29.992,37.511 L25.753,35.998 L23.465,39.919 L19.994,37.021 L16.523,39.919 L14.234,35.998 L9.994,37.510 L9.174,33.029 L4.680,32.985 L5.412,28.487 L1.203,26.889 L3.413,22.923 L0.002,19.956 L3.413,16.989 L1.203,13.024 L5.413,11.424 L4.680,6.929 L9.174,6.885 L9.996,2.405 L14.235,3.916 L16.524,-0.004 L19.995,2.893 L23.466,-0.004 L25.754,3.917 L29.995,2.405 L30.815,6.886 L35.309,6.931 L34.577,11.425 L38.785,13.025 L36.576,16.992 ZM33.912,13.223 L32.453,12.669 L32.707,11.110 L33.079,8.828 L30.797,8.805 L29.237,8.788 L28.952,7.234 L28.536,4.960 L26.384,5.727 L24.916,6.250 L24.123,4.893 L22.961,2.904 L21.199,4.374 L19.994,5.379 L18.789,4.374 L17.027,2.904 L15.867,4.892 L15.074,6.249 L13.606,5.726 L11.455,4.959 L11.038,7.233 L10.753,8.787 L9.193,8.804 L6.912,8.826 L7.283,11.109 L7.537,12.667 L6.078,13.222 L3.944,14.033 L5.064,16.044 L5.830,17.419 L4.648,18.447 L2.913,19.955 L4.647,21.462 L5.830,22.491 L5.063,23.866 L3.943,25.877 L6.076,26.686 L7.535,27.242 L7.281,28.801 L6.909,31.085 L9.191,31.107 L10.751,31.124 L11.037,32.679 L11.453,34.952 L13.605,34.184 L15.073,33.662 L15.866,35.019 L17.027,37.009 L18.789,35.538 L19.994,34.532 L21.200,35.538 L22.961,37.009 L24.122,35.019 L24.914,33.662 L26.382,34.185 L28.533,34.953 L28.950,32.681 L29.235,31.125 L30.796,31.109 L33.077,31.087 L32.706,28.805 L32.452,27.246 L33.911,26.691 L36.045,25.878 L34.924,23.867 L34.158,22.492 L35.341,21.464 L37.075,19.954 L35.341,18.450 L34.159,17.421 L34.925,16.045 L36.045,14.034 L33.912,13.223 ZM24.665,27.369 C22.883,27.369 21.338,25.919 21.318,23.016 C21.318,20.090 22.883,18.462 24.776,18.462 C26.782,18.462 28.081,20.025 28.080,22.791 C28.080,25.851 26.495,27.369 24.665,27.369 ZM24.711,19.646 C23.500,19.646 22.838,21.097 22.838,22.928 C22.816,24.780 23.521,26.186 24.711,26.186 C25.988,26.186 26.560,24.801 26.560,22.883 C26.560,21.118 26.053,19.646 24.711,19.646 ZM15.195,27.330 L23.609,12.610 L24.842,12.610 L16.427,27.330 L15.195,27.330 ZM15.327,21.362 C13.543,21.362 12.002,19.911 11.980,16.987 C11.980,14.086 13.543,12.455 15.437,12.455 C17.442,12.455 18.763,14.019 18.763,16.787 C18.763,19.845 17.178,21.362 15.327,21.362 ZM15.371,13.639 C14.162,13.639 13.521,15.090 13.521,16.922 C13.477,18.773 14.162,20.179 15.371,20.181 C16.648,20.181 17.221,18.796 17.221,16.877 C17.221,15.112 16.715,13.639 15.371,13.639 Z"/>
+                                </svg>
+                            </div>
+                            <div class="bottom-banner-home__item-text-wrapper">
+                                <span class="bottom-banner-home__item-title">Sales & discounts</span>
+                                <span class="bottom-banner-home__item-description">
+                    Worldwide delivery on all. Authorit tively morph next-generation
+                    innov tion with extensive models.
+                </span>
+                            </div>
+                        </div>
+                        <div class="bottom-banner-home__item">
+                            <div>
+                                <svg class="bottom-banner-home__icon" xmlns="http://www.w3.org/2000/svg" width="47.03"
+                                     height="34.91"
+                                     viewBox="0 0 47.03 34.91">
+                                    <path d="M1208.39,2040.53a4.6,4.6,0,0,0-4.64,4.53,4.438,4.438,0,0,0,1.56,3.37l-5.86,2.06-8.34-9.69a4.526,4.526,0,0,0,3.09-4.25,4.646,4.646,0,0,0-9.29,0,4.543,4.543,0,0,0,3.05,4.24l-8.35,9.7-5.86-2.06a4.472,4.472,0,0,0,1.56-3.37,4.646,4.646,0,1,0-5.75,4.4v12.29a1.027,1.027,0,0,0,.05.24,1.6,1.6,0,0,0-.05.39c0,4.41,17.92,4.54,19.96,4.54s19.97-.13,19.97-4.54a1.6,1.6,0,0,0-.05-0.39,1.027,1.027,0,0,0,.05-0.24v-12.29A4.52,4.52,0,0,0,1208.39,2040.53Zm-21.22-3.98a2.386,2.386,0,1,1,2.39,2.33A2.359,2.359,0,0,1,1187.17,2036.55Zm-7.59,16.27a1.136,1.136,0,0,0,1.25-.33l8.7-10.1,8.69,10.1a1.136,1.136,0,0,0,1.25.33l7.76-2.72v9.94c-4.89-2.13-16.11-2.2-17.71-2.2s-12.82.07-17.7,2.2v-9.94Zm9.95,11.89c-8.71,0-14.25-1.01-16.56-1.86a5.313,5.313,0,0,1-1-.47c0.73-.52,3.06-1.24,6.97-1.73a92.23,92.23,0,0,1,21.18,0c3.9,0.49,6.24,1.21,6.96,1.73a4.879,4.879,0,0,1-.99.47C1203.78,2063.7,1198.24,2064.71,1189.53,2064.71Zm-21.25-19.65a2.386,2.386,0,1,1,2.39,2.33A2.357,2.357,0,0,1,1168.28,2045.06Zm40.11,2.33a2.326,2.326,0,1,1,2.39-2.33A2.356,2.356,0,0,1,1208.39,2047.39Z"
+                                          transform="translate(-1166 -2032)"/>
+                                </svg>
+                            </div>
+                            <div class="bottom-banner-home__item-text-wrapper">
+                                <span class="bottom-banner-home__item-title">Quality assurance</span>
+                                <span class="bottom-banner-home__item-description">
+                    Worldwide delivery on all. Authorit tively morph next-generation
+                    innov tion with extensive models.
+                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        @@include('../components/_subscribe-form.html')
     </main>
     @@include('../components/_footer.html')
 </div>
