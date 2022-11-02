@@ -545,6 +545,55 @@
 }
 
 
+.banner-bottom {
+	background-color: #222224;
+
+	&__inner {
+		display: flex;
+		align-items: center;
+		@include adaptiveValue('gap', 100, 20, $screen-lg, $screen-md, 1);
+		min-height: rem(340);
+		@include sm-max {
+			padding: rem(20) 0;
+			height: auto;
+			flex-direction: column;
+		}
+	}
+
+	// .banner-bottom__item
+	&__item {
+		margin-top: rem(-40);
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		color: $light;
+		@include sm-max {
+			margin-top: 0;
+		}
+	}
+
+	// .banner-bottom__icon
+	&__icon {
+		fill: $primary;
+		margin-bottom: rem(30);
+	}
+
+	// .banner-bottom__title
+	&__title {
+		font-size: rem(20);
+		font-weight: $fw-bold;
+		padding-bottom: rem(15);
+	}
+
+	// .banner-bottom__description
+	&__description {
+		font-size: rem(14);
+		font-weight: $fw-light;
+		text-align: center;
+	}
+}
+
+
 .checkbox-wrapper {
 	display: flex;
 	flex-wrap: wrap;
