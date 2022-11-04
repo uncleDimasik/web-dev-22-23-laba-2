@@ -187,22 +187,29 @@
 .bottom-banner-home {
 	@include adaptiveValue('margin-top', 100, 40);
 	@include adaptiveValue('margin-bottom', 100, 40);
-	background-image: url("../images/index-bottom-banner.jpg");
-	background-position: top;
-	background-repeat: no-repeat;
-	background-size: cover;
 	min-height: rem(530);
 	display: flex;
-	justify-content: space-between;
+	@include md-max {
+		flex-direction: column;
+	}
 	// .bottom-banner-home__title-wrapper
 	&__title-wrapper {
-		padding-top: rem(145);
+		background-image: url("../images/index-bottom-banner.jpg");
+		background-position: top left;
+		background-repeat: no-repeat;
+		background-size: cover;
+		@include adaptiveValue('padding-top', 145, 90);
+		@include adaptiveValue('padding-bottom', 145, 90);
 		padding-left: rem(40);
+		width: 70%;
+		@include md-max {
+			width: 100%;
+		}
 	}
 
 	// .bottom-banner-home__title
 	&__title {
-		@include adaptiveValue('font-size', 50, 25);
+		@include adaptiveValue('font-size', 50, 40);
 		color: $light;
 
 		span {
@@ -213,7 +220,7 @@
 
 	// .bottom-banner-home__sub-title
 	&__sub-title {
-		@include adaptiveValue('font-size', 30, 14);
+		@include adaptiveValue('font-size', 30, 25);
 		color: $light;
 	}
 
@@ -222,15 +229,30 @@
 		display: flex;
 		align-items: center;
 		flex-direction: column;
-		max-width: rem(365);
+		width: 100%;
 		gap: rem(50);
 		padding: rem(50) rem(20) rem(50) rem(30);
+		background-color: #222224;
+		@include md-min {
+			max-width: rem(365);
+		}
 	}
 
 	// .bottom-banner-home__item
 	&__item {
 		display: flex;
 		justify-content: space-between;
+		@include sm-max {
+			flex-direction: column;
+		}
+	}
+
+	&__icon-wrapper {
+		display: flex;
+		@include sm-max{
+			justify-content: center;
+			padding-bottom: rem(30);
+		}
 	}
 
 	// .bottom-banner-home__icon
@@ -242,6 +264,10 @@
 		display: flex;
 		flex-direction: column;
 		padding-left: rem(30);
+		@include sm-max{
+			text-align: center;
+			padding: 0;
+		}
 	}
 
 	// .bottom-banner-home__item-title
