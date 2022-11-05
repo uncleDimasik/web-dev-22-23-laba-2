@@ -43,7 +43,7 @@ function images() {
 function scripts() {
     return src([
         'node_modules/jquery/dist/jquery.js',
-         'node_modules/jquery-ui/dist/jquery-ui.js',
+        'node_modules/jquery-ui/dist/jquery-ui.js',
         'node_modules/slick-carousel/slick/slick.min.js',
         'app/js/main.js'
     ])
@@ -87,8 +87,10 @@ function build() {
 function watching() {
     watch(['app/scss/**/*.scss'], styles);
     watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
-    watch(['app/**/*.html']).on('change', () => {
+    watch(['app/html/**/*.html']).on('change', () => {
         include();
+    });
+    watch(['app/*.html']).on('change', () => {
         browserSync.reload();
     });
 }

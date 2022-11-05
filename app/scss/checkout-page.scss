@@ -1,0 +1,166 @@
+@use 'utils/vars' as *;
+@use 'utils/mixins'as *;
+@use "sass:math";
+
+
+.checkout {
+	// .checkout__inner
+	&__inner {
+		@include adaptiveValue('padding-bottom', 100, 20, $screen-lg, $screen-sm, 1);
+		@include adaptiveValue('padding-top', 100, 20, $screen-lg, $screen-sm, 1);
+	}
+
+	// .checkout__spoiler
+	&__spoiler {
+	}
+}
+
+
+.spoiler-checkout {
+	// .spoiler-checkout__wrapper
+	&__wrapper {
+
+	}
+
+	&__item {
+		border-bottom: rem(1) solid $grey-dark;
+	}
+
+	// .spoiler-checkout__title
+	&__title {
+		font-size: rem(16);
+		font-weight: $fw-bold;
+		text-transform: uppercase;
+		width: 100%;
+		@include adaptiveValue('padding-bottom', 25, 10, $screen-lg, $screen-sm, 1);
+		padding-top: rem(25);
+		text-align: start;
+		display: inline-block;
+	}
+
+	// .spoiler-checkout__body
+	&__body {
+
+	}
+}
+
+
+.req-l {
+	padding-left: rem(5);
+	color: red;
+}
+
+
+.req-r {
+	padding-rigt: rem(5);
+	color: red;
+}
+
+
+.body-spoiler-checkout {
+	display: flex;
+	justify-content: space-between;
+	@include sm-min {
+		padding-left: rem(36);
+	}
+	@include adaptiveValue('padding-top', 20, 0, $screen-lg, $screen-sm, 1);
+	@include adaptiveValue('padding-bottom', 100, 40, $screen-lg, $screen-sm, 1);
+
+	@include md-max {
+		flex-direction: column;
+		//align-items: center;
+		justify-content: flex-start;
+	}
+	// .body-spoiler-checkout__guest-form
+	&__guest-form {
+		display: flex;
+		flex-direction: column;
+		flex: 1 1 auto;
+		@include md-max {
+			padding-bottom: rem(20);
+		}
+	}
+
+	&__button-wrapper {
+		display: flex;
+		flex-wrap: nowrap;
+		@include sm-max {
+			flex-wrap: wrap;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__required-text {
+		padding-top: rem(15);
+		color: red;
+		font-size: rem(13);
+		font-weight: $fw-bold;
+	}
+
+	// .body-spoiler-checkout__registered-form
+	&__registered-form {
+		display: flex;
+		flex-direction: column;
+		flex: 1 1 auto;
+	}
+
+	// .body-spoiler-checkout__title
+	&__title {
+		font-size: rem(13);
+		font-weight: $fw-bold;
+		text-transform: uppercase;
+		padding-bottom: rem(10);
+		padding-top: rem(10);
+		line-height: math.div(16, 13);
+
+		& + &:last-of-type {
+			padding-top: 0;
+		}
+	}
+
+	&__registered-form-input {
+		display: flex;
+		flex-direction: column;
+
+		& + & {
+			padding-top: rem(16);
+		}
+	}
+
+	// .body-spoiler-checkout__description
+	&__description {
+		font-size: rem(13);
+		color: $grey-darker;
+		padding-bottom: rem(10);
+	}
+
+	&__input {
+		border: rem(1) solid $grey-darker;
+		padding: rem(10) rem(10);
+		max-width: rem(390);
+	}
+
+	// .body-spoiler-checkout__button
+	&__button-outline {
+		font-size: rem(14);
+		font-weight: $fw-bold;
+		padding: rem(15);
+		border: rem(1) solid $grey-darker;
+		width: 100%;
+		max-width: rem(180);
+		margin-top: rem(20);
+	}
+
+	&__button {
+		font-size: rem(14);
+		font-weight: $fw-bold;
+		padding: rem(15);
+		max-width: rem(180);
+		margin-top: rem(20);
+		white-space: nowrap;
+		@include sm-min {
+			margin-left: rem(20);
+		}
+	}
+}
