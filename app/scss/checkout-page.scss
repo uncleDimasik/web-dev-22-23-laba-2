@@ -1,5 +1,6 @@
 @use 'utils/vars' as *;
 @use 'utils/mixins'as *;
+@use "utils/global" as *;
 @use "sass:math";
 
 
@@ -143,13 +144,10 @@
 
 	// .body-spoiler-checkout__button
 	&__button-outline {
-		font-size: rem(14);
-		font-weight: $fw-bold;
-		padding: rem(15);
-		border: rem(1) solid $grey-darker;
-		width: 100%;
-		max-width: rem(180);
+		@extend %button-outline;
 		margin-top: rem(20);
+		font-size: rem(14);
+		max-width: rem(180);
 	}
 
 	&__button {

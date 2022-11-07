@@ -147,3 +147,18 @@ main {
 }
 
 
+%button-outline {
+	font-weight: $fw-bold;
+	padding: rem(15);
+	border: rem(1) solid $grey-darker;
+	width: 100%;
+}
+%button-solid {
+	font-weight: $fw-bold;
+	padding: rem(15);
+	background-color: $primary;
+	color: $light;
+	//border: rem(1) solid $grey-darker;
+	width: 100%;
+}
+
