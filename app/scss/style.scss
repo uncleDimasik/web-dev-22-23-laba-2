@@ -5,7 +5,7 @@
 @import 'utils/reset';
 @import 'utils/fonts';
 @import 'utils/libs';
-@import 'utils/global';
+@import "utils/global";
 
 @import 'header';
 @import 'breadcrumbs';
@@ -27,11 +27,13 @@
 	}
 }
 
+
 @import "checkout-page";
 @import "index-page";
 @import "product-page";
 @import "subscribe-form";
 @import "shopping-cart";
+@import "single-page";
 @import "footer";
 
 
