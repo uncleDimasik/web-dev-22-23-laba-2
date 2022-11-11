@@ -31,7 +31,16 @@
 	}
 
 	&__logo {
-		z-index: $z-logo;
+		display: flex;
+		align-items: center;
+		img{
+			z-index: $z-logo;
+			object-fit: contain;
+			@include adaptiveValue('width', 180, 120,$screen-lg,$screen-sm,1);
+			height: rem(100);
+			padding:rem(15);
+		}
+
 	}
 
 }
