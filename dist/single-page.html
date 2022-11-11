@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <meta name="description" content="laba-2">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+    <div class="header__inner">
+        <div class="header__top top-header">
+            <div class="container">
+                <div class="top-header__inner">
+                    <a href="index.html" class="top-header__logo">
+                        <img src="images/Mastermind-FatStack-TwoColour.svg" alt="logo">
+                    </a>
+                    <div data-da=".menu__body,768.3" class="top-header__search">
+                        <form action="#" class="search-header">
+                            <div class="search-header__select-wrapper search-select">
+                                <select name="search-categories" class="search-select__select">
+                                    <option value="none" selected>Browse</option>
+                                    <option value="home">Home</option>
+                                    <option value="Lego">Lego</option>
+                                    <option value="Dolls">Dolls</option>
+                                    <option value="Robots">Robots</option>
+                                </select>
+                            </div>
+                            <input autocomplete="off" type="text" name="form[]" data-error="Error"
+                                   placeholder="Search for Item..."
+                                   class="search-header__input search-input">
+                            <button type="submit" class="search-header__button search-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                     class="search-button__icon magnifying-glass-solid">
+                                    <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="top-header__actions actions-header">
+                        <a href="#" class="actions-header__cart cart-header">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 29" class="cart-header__icon">
+                                <path d="M31.899,7.565 L26.493,19.977 C26.296,20.410 25.882,20.686 25.409,20.686 L10.554,20.686 C10.021,20.686 9.548,20.331 9.410,19.819 L4.577,2.364 L1.184,2.364 C0.533,2.364 -0.000,1.832 -0.000,1.182 C-0.000,0.532 0.533,-0.000 1.184,-0.000 L5.464,-0.000 C5.997,-0.000 6.471,0.354 6.609,0.867 L11.442,18.322 L24.620,18.322 L28.999,8.274 L14.401,8.274 C13.750,8.274 13.217,7.742 13.217,7.092 C13.217,6.442 13.750,5.910 14.401,5.910 L30.814,5.910 C31.208,5.910 31.583,6.107 31.800,6.442 C32.017,6.777 32.057,7.191 31.899,7.565 ZM9.429,23.641 C10.909,23.641 12.112,24.843 12.112,26.320 C12.112,27.798 10.909,29.000 9.429,29.000 C7.950,29.000 6.747,27.798 6.747,26.320 C6.747,24.843 7.950,23.641 9.429,23.641 ZM26.020,23.641 C27.500,23.543 28.782,24.666 28.881,26.124 C28.920,26.852 28.703,27.542 28.230,28.074 C27.756,28.626 27.105,28.941 26.395,29.000 C26.336,29.000 26.257,29.000 26.198,29.000 C24.797,29.000 23.633,27.897 23.535,26.498 C23.436,25.040 24.541,23.740 26.020,23.641 Z"/>
+                            </svg>
+                        </a>
+                        <div data-da=".menu__body,768" class="actions-header__select-wrapper account-select">
+                            <select name="search-categories" class="account-select__select">
+                                <option value="none" selected>My Account</option>
+                                <option value="home">Home</option>
+                                <option value="Lego">Lego</option>
+                                <option value="Dolls">Dolls</option>
+                                <option value="Robots">Robots</option>
+                            </select>
+                        </div>
+                        <div hidden class="menu">
+                            <button type='button' class="icon-menu"><span></span></button>
+                            <div class="menu__body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="header__nav nav-header">
+            <div class="container">
+                <div data-da=".menu__body,768.2" class="nav-header__inner">
+                    <nav class="nav-header__catalog catalog">
+                        <ul class="catalog__list">
+                            <li class="catalog__item">
+                                <a href="index.html" class="catalog__link">HOME</a>
+                            </li>
+                            <li class="catalog__item">
+                                <a href="product.html" class="catalog__link active">Lego</a>
+                            </li>
+                            <li class="catalog__item">
+                                <a href="checkout.html" class="catalog__link">Dolls</a>
+                            </li>
+                            <li class="catalog__item">
+                                <a href="shopping-cart.html" class="catalog__link">Robots</a>
+                            </li>
+                            <li class="catalog__item">
+                                <a href="single-page.html" class="catalog__link">ACCESSORIES</a>
+                            </li>
+                            <li class="catalog__item">
+                                <a href="index.html" class="catalog__link">FEATURED</a>
+                            </li>
+                            <li class="catalog__item">
+                                <a href="index.html" class="catalog__link">HOT DEALS</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    <div class="breadcrumbs-wrapper">
+    <div class="container">
+        <div class="breadcrumbs-wrapper__inner">
+            <a href="#" class="breadcrumbs-wrapper__current-link">NEW ARRIVALS</a>
+            <ul class="breadcrumbs-wrapper__breadcrumbs breadcrumbs">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">Lego</a></li>
+                <li><a class="current-page" href="#">NEW ARRIVALS</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <main class="page single-page">
+        <div class="single-page__inner">
+            <div class="single-page__product-slider product-slider">
+                <img src="images/single-page-slider.jpg" alt="Product">
+                <img src="images/single-page-slider.jpg" alt="Product">
+                <img src="images/single-page-slider.jpg" alt="Product">
+                <img src="images/single-page-slider.jpg" alt="Product">
+            </div>
+            <div class="container">
+                <div class="single-page__product-details product-details">
+                    <div class="product-details__collection">LEGO COLLECTION</div>
+                    <div class="product-details__product-name">LEGO TECHNIC</div>
+                    <div class="product-details__product-description">One of the most iconic trucks from Monster Jam, El
+                        Toro Loco (42135) 2 in 1 pull-back monster truck toy, always delivers thrilling performance and
+                        even better imaginative play.
+                    </div>
+                    <div class="product-details__product-info-wrapper">
+                        <div class="product-details__product-material">
+                            MATERIAL:<span
+                                class="product-details__product-material-value">&nbsp;&nbsp;&nbsp;PLASTIC</span>
+                        </div>
+                        <div class="product-details__product-designer">
+                            MANUFACTURER:<span
+                                class="product-details__product-material-value">&nbsp;&nbsp;&nbsp;LEGO EUROPE NORTH</span>
+                        </div>
+                    </div>
+                    <div class="product-details__product-price">$561</div>
+                    <div class="product-details__product-parameters product-parameters">
+                        <div class="product-parameters__wrapper">
+                            <span class="product-parameters__title">CHOOSE COLOR</span>
+                            <div class="wrapper-dropdown select-color" id="dropdownColor">
+                                <span><span data-background-color="red"></span>Red</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
+                                </svg>
+                                <ul class="dropdown">
+                                    <li><span><span data-background-color="red"></span>Red</span></li>
+                                    <li><span><span data-background-color="blue"></span>Red</span></li>
+                                    <li><span><span data-background-color="red"></span>Red</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-parameters__wrapper">
+                            <span class="product-parameters__title">CHOOSE SIZE</span>
+                            <div class="wrapper-dropdown select-size" id="dropdownSize">
+                            <span>XXL
+                            </span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
+                                </svg>
+                                <ul class="dropdown">
+                                    <li><span>XXL</span></li>
+                                    <li><span>XXL</span></li>
+                                    <li><span>XXL</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-parameters__wrapper">
+                            <span class="product-parameters__title">QUANTITY</span>
+                            <input class="product-details__select-wrapper input-quantity" type="number" name="quantity"
+                                   min="1" max="5">
+                        </div>
+                    </div>
+                    <button type="submit" class="product-details__button-outline">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 29"
+                             class="product-item__button-icon">
+                            <path d="M31.899,7.565 L26.493,19.977 C26.296,20.410 25.882,20.686 25.409,20.686 L10.554,20.686 C10.021,20.686 9.548,20.331 9.410,19.819 L4.577,2.364 L1.184,2.364 C0.533,2.364 -0.000,1.832 -0.000,1.182 C-0.000,0.532 0.533,-0.000 1.184,-0.000 L5.464,-0.000 C5.997,-0.000 6.471,0.354 6.609,0.867 L11.442,18.322 L24.620,18.322 L28.999,8.274 L14.401,8.274 C13.750,8.274 13.217,7.742 13.217,7.092 C13.217,6.442 13.750,5.910 14.401,5.910 L30.814,5.910 C31.208,5.910 31.583,6.107 31.800,6.442 C32.017,6.777 32.057,7.191 31.899,7.565 ZM9.429,23.641 C10.909,23.641 12.112,24.843 12.112,26.320 C12.112,27.798 10.909,29.000 9.429,29.000 C7.950,29.000 6.747,27.798 6.747,26.320 C6.747,24.843 7.950,23.641 9.429,23.641 ZM26.020,23.641 C27.500,23.543 28.782,24.666 28.881,26.124 C28.920,26.852 28.703,27.542 28.230,28.074 C27.756,28.626 27.105,28.941 26.395,29.000 C26.336,29.000 26.257,29.000 26.198,29.000 C24.797,29.000 23.633,27.897 23.535,26.498 C23.436,25.040 24.541,23.740 26.020,23.641 Z"/>
+                        </svg>
+                        <span>Add to Card</span>
+                    </button>
+                </div>
+            </div>
+            <div class="container">
+                <div class="single-page__product-items featured-items-home">
+                    <span class="featured-items-home__title">
+                        YOU MAY LIKE ALSO
+                    </span>
+                    <div class="featured-items-home__product-items-grid">
+                        <article class="catalog-product__item product-item">
+                            <div class="product-item__preview-wrapper">
+                                <div class="product-item__color-filter">
+                                    <button class="product-item__button-outline">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 29"
+                                             class="product-item__button-icon">
+                                            <path d="M31.899,7.565 L26.493,19.977 C26.296,20.410 25.882,20.686 25.409,20.686 L10.554,20.686 C10.021,20.686 9.548,20.331 9.410,19.819 L4.577,2.364 L1.184,2.364 C0.533,2.364 -0.000,1.832 -0.000,1.182 C-0.000,0.532 0.533,-0.000 1.184,-0.000 L5.464,-0.000 C5.997,-0.000 6.471,0.354 6.609,0.867 L11.442,18.322 L24.620,18.322 L28.999,8.274 L14.401,8.274 C13.750,8.274 13.217,7.742 13.217,7.092 C13.217,6.442 13.750,5.910 14.401,5.910 L30.814,5.910 C31.208,5.910 31.583,6.107 31.800,6.442 C32.017,6.777 32.057,7.191 31.899,7.565 ZM9.429,23.641 C10.909,23.641 12.112,24.843 12.112,26.320 C12.112,27.798 10.909,29.000 9.429,29.000 C7.950,29.000 6.747,27.798 6.747,26.320 C6.747,24.843 7.950,23.641 9.429,23.641 ZM26.020,23.641 C27.500,23.543 28.782,24.666 28.881,26.124 C28.920,26.852 28.703,27.542 28.230,28.074 C27.756,28.626 27.105,28.941 26.395,29.000 C26.336,29.000 26.257,29.000 26.198,29.000 C24.797,29.000 23.633,27.897 23.535,26.498 C23.436,25.040 24.541,23.740 26.020,23.641 Z"/>
+                                        </svg>
+                                        <span>Add to Card</span>
+                                    </button>
+                                </div>
+                                <a href="#">
+                                    <img src="images/product-preview.jpg" alt="preview"
+                                         class="product-item__preview-image">
+                                </a>
+                            </div>
+                            <div class="product-item__description">
+                                <a href="#" class="product-item__title">LEGO Technic Material Handler Construction Vehicle 42144</a>
+                                <p class="product-item__price">$104.99</p>
+                            </div>
+                        </article>
+                        <article class="catalog-product__item product-item">
+                            <div class="product-item__preview-wrapper">
+                                <div class="product-item__color-filter">
+                                    <button class="product-item__button-outline">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 29"
+                                             class="product-item__button-icon">
+                                            <path d="M31.899,7.565 L26.493,19.977 C26.296,20.410 25.882,20.686 25.409,20.686 L10.554,20.686 C10.021,20.686 9.548,20.331 9.410,19.819 L4.577,2.364 L1.184,2.364 C0.533,2.364 -0.000,1.832 -0.000,1.182 C-0.000,0.532 0.533,-0.000 1.184,-0.000 L5.464,-0.000 C5.997,-0.000 6.471,0.354 6.609,0.867 L11.442,18.322 L24.620,18.322 L28.999,8.274 L14.401,8.274 C13.750,8.274 13.217,7.742 13.217,7.092 C13.217,6.442 13.750,5.910 14.401,5.910 L30.814,5.910 C31.208,5.910 31.583,6.107 31.800,6.442 C32.017,6.777 32.057,7.191 31.899,7.565 ZM9.429,23.641 C10.909,23.641 12.112,24.843 12.112,26.320 C12.112,27.798 10.909,29.000 9.429,29.000 C7.950,29.000 6.747,27.798 6.747,26.320 C6.747,24.843 7.950,23.641 9.429,23.641 ZM26.020,23.641 C27.500,23.543 28.782,24.666 28.881,26.124 C28.920,26.852 28.703,27.542 28.230,28.074 C27.756,28.626 27.105,28.941 26.395,29.000 C26.336,29.000 26.257,29.000 26.198,29.000 C24.797,29.000 23.633,27.897 23.535,26.498 C23.436,25.040 24.541,23.740 26.020,23.641 Z"/>
+                                        </svg>
+                                        <span>Add to Card</span>
+                                    </button>
+                                </div>
+                                <a href="#">
+                                    <img src="images/product-preview.jpg" alt="preview"
+                                         class="product-item__preview-image">
+                                </a>
+                            </div>
+                            <div class="product-item__description">
+                                <a href="#" class="product-item__title">LEGO Technic Material Handler Construction Vehicle 42144</a>
+                                <p class="product-item__price">$104.99</p>
+                            </div>
+                        </article>
+                        <article class="catalog-product__item product-item">
+                            <div class="product-item__preview-wrapper">
+                                <div class="product-item__color-filter">
+                                    <button class="product-item__button-outline">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 29"
+                                             class="product-item__button-icon">
+                                            <path d="M31.899,7.565 L26.493,19.977 C26.296,20.410 25.882,20.686 25.409,20.686 L10.554,20.686 C10.021,20.686 9.548,20.331 9.410,19.819 L4.577,2.364 L1.184,2.364 C0.533,2.364 -0.000,1.832 -0.000,1.182 C-0.000,0.532 0.533,-0.000 1.184,-0.000 L5.464,-0.000 C5.997,-0.000 6.471,0.354 6.609,0.867 L11.442,18.322 L24.620,18.322 L28.999,8.274 L14.401,8.274 C13.750,8.274 13.217,7.742 13.217,7.092 C13.217,6.442 13.750,5.910 14.401,5.910 L30.814,5.910 C31.208,5.910 31.583,6.107 31.800,6.442 C32.017,6.777 32.057,7.191 31.899,7.565 ZM9.429,23.641 C10.909,23.641 12.112,24.843 12.112,26.320 C12.112,27.798 10.909,29.000 9.429,29.000 C7.950,29.000 6.747,27.798 6.747,26.320 C6.747,24.843 7.950,23.641 9.429,23.641 ZM26.020,23.641 C27.500,23.543 28.782,24.666 28.881,26.124 C28.920,26.852 28.703,27.542 28.230,28.074 C27.756,28.626 27.105,28.941 26.395,29.000 C26.336,29.000 26.257,29.000 26.198,29.000 C24.797,29.000 23.633,27.897 23.535,26.498 C23.436,25.040 24.541,23.740 26.020,23.641 Z"/>
+                                        </svg>
+                                        <span>Add to Card</span>
+                                    </button>
+                                </div>
+                                <a href="#">
+                                    <img src="images/product-preview.jpg" alt="preview"
+                                         class="product-item__preview-image">
+                                </a>
+                            </div>
+                            <div class="product-item__description">
+                                <a href="#" class="product-item__title">LEGO Technic Material Handler Construction Vehicle 42144</a>
+                                <p class="product-item__price">$104.99</p>
+                            </div>
+                        </article>
+                        <article class="catalog-product__item product-item">
+                            <div class="product-item__preview-wrapper">
+                                <div class="product-item__color-filter">
+                                    <button class="product-item__button-outline">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 29"
+                                             class="product-item__button-icon">
+                                            <path d="M31.899,7.565 L26.493,19.977 C26.296,20.410 25.882,20.686 25.409,20.686 L10.554,20.686 C10.021,20.686 9.548,20.331 9.410,19.819 L4.577,2.364 L1.184,2.364 C0.533,2.364 -0.000,1.832 -0.000,1.182 C-0.000,0.532 0.533,-0.000 1.184,-0.000 L5.464,-0.000 C5.997,-0.000 6.471,0.354 6.609,0.867 L11.442,18.322 L24.620,18.322 L28.999,8.274 L14.401,8.274 C13.750,8.274 13.217,7.742 13.217,7.092 C13.217,6.442 13.750,5.910 14.401,5.910 L30.814,5.910 C31.208,5.910 31.583,6.107 31.800,6.442 C32.017,6.777 32.057,7.191 31.899,7.565 ZM9.429,23.641 C10.909,23.641 12.112,24.843 12.112,26.320 C12.112,27.798 10.909,29.000 9.429,29.000 C7.950,29.000 6.747,27.798 6.747,26.320 C6.747,24.843 7.950,23.641 9.429,23.641 ZM26.020,23.641 C27.500,23.543 28.782,24.666 28.881,26.124 C28.920,26.852 28.703,27.542 28.230,28.074 C27.756,28.626 27.105,28.941 26.395,29.000 C26.336,29.000 26.257,29.000 26.198,29.000 C24.797,29.000 23.633,27.897 23.535,26.498 C23.436,25.040 24.541,23.740 26.020,23.641 Z"/>
+                                        </svg>
+                                        <span>Add to Card</span>
+                                    </button>
+                                </div>
+                                <a href="#">
+                                    <img src="images/product-preview.jpg" alt="preview"
+                                         class="product-item__preview-image">
+                                </a>
+                            </div>
+                            <div class="product-item__description">
+                                <a href="#" class="product-item__title">LEGO Technic Material Handler Construction Vehicle 42144</a>
+                                <p class="product-item__price">$104.99</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+    <div class="footer__inner">
+        <section class="page__subscribe-form subscribe-form">
+    <div class="subscribe-form__gray-filter">
+        <div class="container">
+            <div class="subscribe-form__inner">
+                <div class="subscribe-form__review-slider review-slider">
+                    <div class="review-slider__item-wrapper">
+                        <div class="review-slider__item">
+                            <img src="images/review-avatar.jpg" alt="review-avatar" class="review-slider__avatar"/>
+                            <div class="review-slider__description-wrapper">
+                                <p class="review-slider__description">
+                                    "Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                                    a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium"
+                                </p>
+                                <p class="review-slider__full-name">
+                                    Bin Burhan
+                                </p>
+                                <p class="review-slider__position">
+                                    Dhaka, Bd
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-slider__item-wrapper">
+                        <div class="review-slider__item">
+                            <img src="images/review-avatar.jpg" alt="review-avatar" class="review-slider__avatar"/>
+                            <div class="review-slider__description-wrapper">
+                                <p class="review-slider__description">
+                                    "Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                                    a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium"
+                                </p>
+                                <p class="review-slider__full-name">
+                                    Bin Burhan
+                                </p>
+                                <p class="review-slider__position">
+                                    Dhaka, Bd
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-slider__item-wrapper">
+                        <div class="review-slider__item">
+                            <img src="images/review-avatar.jpg" alt="review-avatar" class="review-slider__avatar"/>
+                            <div class="review-slider__description-wrapper">
+                                <p class="review-slider__description">
+                                    "Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                                    a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium"
+                                </p>
+                                <p class="review-slider__full-name">
+                                    Bin Burhan
+                                </p>
+                                <p class="review-slider__position">
+                                    Dhaka, Bd
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subscribe-form__form form-subscribe">
+                    <div class="form-subscribe__title-wrapper">
+                        <div class="form-subscribe__title">
+                            SUBSCRIBE
+                        </div>
+                        <div class="form-subscribe__sub-title">
+                            FOR OUR NEWLETTER AND PROMOTION
+                        </div>
+                    </div>
+                    <form action="#" class="form-subscribe__email-form form-email">
+                        <input
+                                class="form-email__input"
+                                autocomplete="on" type="text" name="form[]" data-error="Error"
+                                placeholder="Enter You Email"
+                        >
+                        <button type="submit" class="form-email__button">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <div class="container">
+            <div class="footer-body body-footer">
+                <div class="body-footer body-footer__inner">
+                    <div class="body-footer__about about-footer">
+                        <a href='index.html' class="about-footer__logo">
+                            <img src="images/Mastermind-FatStack-TwoColour.svg" alt="logo">
+                        </a>
+                        <div class="about-footer__description">
+                            <p>
+                                Gary Grant found employment in the 1970s at a local bike shop in Amersham, his hometown.
+                                His natural talent for buying and selling flourished when he recognised a new craze for
+                                customised skateboards, so he started selling skateboard accessories while he was still
+                                working at the bike shop. The owner of the bike shop was suitably unimpressed that the
+                                majority of calls into the store were for Gary and so Gary was let go, set free to start
+                                up on his own.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="body-footer__spoiler-wrapper spoiler-wrapper">
+                        <div class="body-footer__item item-footer">
+                            <div data-spoilers="768" class="item-footer__spoiler spoiler-item-footer">
+                                <div class="spoiler-item-footer__item">
+                                    <button type="button" data-spoiler class="spoiler-item-footer__title">
+                                        COMPANY
+                                    </button>
+                                    <div class="spoiler-item-footer__body">
+                                        <nav class="menu-footer">
+                                            <ul class="menu-footer__list">
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">
+                                                        Home
+                                                    </a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">
+                                                        Shop
+                                                    </a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">
+                                                        About
+                                                    </a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">
+                                                        How it Works
+                                                    </a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">
+                                                        Contact
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body-footer__item item-footer">
+                            <div data-spoilers="768" class="item-footer__spoiler spoiler-item-footer">
+                                <div class="spoiler-item-footer__item">
+                                    <button type="button" data-spoiler class="spoiler-item-footer__title">
+                                        INFORMATION
+                                    </button>
+                                    <div class="spoiler-item-footer__body">
+                                        <nav class="menu-footer">
+                                            <ul class="menu-footer__list">
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">
+                                                        Terms & Condition
+                                                    </a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">
+                                                        Privacy Policy
+                                                    </a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">
+                                                        How to Buy
+                                                    </a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">
+                                                        How to Sell
+                                                    </a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">
+                                                        Promotion
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body-footer__item item-footer">
+                            <div data-spoilers="768" class="item-footer__spoiler spoiler-item-footer">
+                                <div class="spoiler-item-footer__item">
+                                    <button type="button" data-spoiler class="spoiler-item-footer__title">
+                                        SHOP CATEGORY
+                                    </button>
+                                    <div class="spoiler-item-footer__body">
+                                        <nav class="menu-footer">
+                                            <ul class="menu-footer__list">
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">
+                                                        Lego
+                                                    </a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">
+                                                        Dolls
+                                                    </a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">
+                                                        Robots
+                                                    </a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">
+                                                        Cars
+                                                    </a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">
+                                                        Brows All
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-social">
+            <div class="container">
+                <div class="footer-social__inner">
+                    <span class="footer-social__copyright">
+                        © 2017  Toys Rights Reserved.
+                    </span>
+                    <div class="footer-social__social-links social-links">
+
+                        <a href="#" class="social-link-wrapper__link social-link">
+                            <svg class="social-link__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+                            </svg>
+                        </a>
+
+
+                        <a href="#" class="social-link-wrapper__link social-link">
+                            <svg class="social-link__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/>
+                            </svg>
+                        </a>
+
+
+                        <a href="#" class="social-link-wrapper__link social-link">
+                            <svg class="social-link__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/>
+                            </svg>
+                        </a>
+
+
+                        <a href="#" class="social-link-wrapper__link social-link">
+                            <svg class="social-link__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z"/>
+                            </svg>
+                        </a>
+
+
+                        <a href="#" class="social-link-wrapper__link social-link">
+                            <svg class="social-link__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                <path d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"/>
+                            </svg>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+<script src="js/dynamicAdapt.js"></script>
+<script src="js/spoiler.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

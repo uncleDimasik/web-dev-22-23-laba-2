@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <meta name="description" content="laba-2">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+    <div class="header__inner">
+        <div class="header__top top-header">
+            <div class="container">
+                <div class="top-header__inner">
+                    <a href="index.html" class="top-header__logo">
+                        <img src="images/Mastermind-FatStack-TwoColour.svg" alt="logo">
+                    </a>
+                    <div data-da=".menu__body,768.3" class="top-header__search">
+                        <form action="#" class="search-header">
+                            <div class="search-header__select-wrapper search-select">
+                                <select name="search-categories" class="search-select__select">
+                                    <option value="none" selected>Browse</option>
+                                    <option value="home">Home</option>
+                                    <option value="Lego">Lego</option>
+                                    <option value="Dolls">Dolls</option>
+                                    <option value="Robots">Robots</option>
+                                </select>
+                            </div>
+                            <input autocomplete="off" type="text" name="form[]" data-error="Error"
+                                   placeholder="Search for Item..."
+                                   class="search-header__input search-input">
+                            <button type="submit" class="search-header__button search-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                     class="search-button__icon magnifying-glass-solid">
+                                    <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="top-header__actions actions-header">
+                        <a href="#" class="actions-header__cart cart-header">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 29" class="cart-header__icon">
+                                <path d="M31.899,7.565 L26.493,19.977 C26.296,20.410 25.882,20.686 25.409,20.686 L10.554,20.686 C10.021,20.686 9.548,20.331 9.410,19.819 L4.577,2.364 L1.184,2.364 C0.533,2.364 -0.000,1.832 -0.000,1.182 C-0.000,0.532 0.533,-0.000 1.184,-0.000 L5.464,-0.000 C5.997,-0.000 6.471,0.354 6.609,0.867 L11.442,18.322 L24.620,18.322 L28.999,8.274 L14.401,8.274 C13.750,8.274 13.217,7.742 13.217,7.092 C13.217,6.442 13.750,5.910 14.401,5.910 L30.814,5.910 C31.208,5.910 31.583,6.107 31.800,6.442 C32.017,6.777 32.057,7.191 31.899,7.565 ZM9.429,23.641 C10.909,23.641 12.112,24.843 12.112,26.320 C12.112,27.798 10.909,29.000 9.429,29.000 C7.950,29.000 6.747,27.798 6.747,26.320 C6.747,24.843 7.950,23.641 9.429,23.641 ZM26.020,23.641 C27.500,23.543 28.782,24.666 28.881,26.124 C28.920,26.852 28.703,27.542 28.230,28.074 C27.756,28.626 27.105,28.941 26.395,29.000 C26.336,29.000 26.257,29.000 26.198,29.000 C24.797,29.000 23.633,27.897 23.535,26.498 C23.436,25.040 24.541,23.740 26.020,23.641 Z"/>
+                            </svg>
+                        </a>
+                        <div data-da=".menu__body,768" class="actions-header__select-wrapper account-select">
+                            <select name="search-categories" class="account-select__select">
+                                <option value="none" selected>My Account</option>
+                                <option value="home">Home</option>
+                                <option value="Lego">Lego</option>
+                                <option value="Dolls">Dolls</option>
+                                <option value="Robots">Robots</option>
+                            </select>
+                        </div>
+                        <div hidden class="menu">
+                            <button type='button' class="icon-menu"><span></span></button>
+                            <div class="menu__body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="header__nav nav-header">
+            <div class="container">
+                <div data-da=".menu__body,768.2" class="nav-header__inner">
+                    <nav class="nav-header__catalog catalog">
+                        <ul class="catalog__list">
+                            <li class="catalog__item">
+                                <a href="index.html" class="catalog__link">HOME</a>
+                            </li>
+                            <li class="catalog__item">
+                                <a href="product.html" class="catalog__link active">Lego</a>
+                            </li>
+                            <li class="catalog__item">
+                                <a href="checkout.html" class="catalog__link">Dolls</a>
+                            </li>
+                            <li class="catalog__item">
+                                <a href="shopping-cart.html" class="catalog__link">Robots</a>
+                            </li>
+                            <li class="catalog__item">
+                                <a href="single-page.html" class="catalog__link">ACCESSORIES</a>
+                            </li>
+                            <li class="catalog__item">
+                                <a href="index.html" class="catalog__link">FEATURED</a>
+                            </li>
+                            <li class="catalog__item">
+                                <a href="index.html" class="catalog__link">HOT DEALS</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    <div class="breadcrumbs-wrapper">
+    <div class="container">
+        <div class="breadcrumbs-wrapper__inner">
+            <a href="#" class="breadcrumbs-wrapper__current-link">NEW ARRIVALS</a>
+            <ul class="breadcrumbs-wrapper__breadcrumbs breadcrumbs">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">Lego</a></li>
+                <li><a class="current-page" href="#">NEW ARRIVALS</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <main class="page shopping-cart">
+        <div class="container">
+            <div class="shopping-cart__inner">
+                <div class="shopping-cart__table cart-table">
+                    <div class="cart-table__header">
+                        <div class="cart-table__row">
+                            <label class="details-column"><span
+                                    class="table-title">PRODUCT DETAILS</span>
+                            </label>
+                            <div class="header-column-wrapper">
+                                <label class="unite-price-column"><span
+                                        class="table-title">UNITE PRICE</span>
+                                </label>
+                                <label class="quantity-column"><span
+                                        class="table-title">QUANTITY</span>
+                                </label>
+                                <label class="shipping-column"><span
+                                        class="table-title">SHIPPING</span>
+                                </label>
+                                <label class="subtotal-column"><span
+                                        class="table-title">SUBTOTAL</span>
+                                </label>
+                                <label class="action-column"><span
+                                        class="table-title">ACTION</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-table__body">
+                        <div class="cart-table__row">
+                            <div class="details-column body-details-column">
+                                <div class="body-details-column__image-wrapper">
+                                    <img src="images/product-cart.jpg" alt="preview" class="body-details-column__image">
+                                </div>
+                                <div class="body-details-column__wrapper">
+                                    <div class="table-item-name">
+                                        <span>LEGO Technic Material Handler Construction Vehicle 42144</span>
+                                    </div>
+                                    <div class="table-prop">Age: <span
+                                            class="table-sub-prop">&nbsp;&nbsp;10 - 13 years</span>
+                                    </div>
+                                    <div class="table-prop">Manufacturer: <span
+                                            class="table-sub-prop">&nbsp;&nbsp;LEGO EUROPE NORTH</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="body-column-wrapper">
+                                <div class="unite-price-column">
+                                    <span class="table-prop">150$</span>
+                                </div>
+                                <div class="quantity-column">
+                                    <input class="table-prop-input" type="text" value="10"
+                                           readonly/>
+                                </div>
+                                <div class="shipping-column">
+                                    <span class="table-prop">FREE</span>
+                                </div>
+                                <div class="subtotal-column">
+                                    <span class="table-prop">300$</span>
+                                </div>
+                                <div class="action-column">
+                                    <button class="table-prop-button"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-table__row">
+                            <div class="details-column body-details-column">
+                                <div class="body-details-column__image-wrapper">
+                                    <img src="images/product-cart.jpg" alt="preview" class="body-details-column__image">
+                                </div>
+                                <div class="body-details-column__wrapper">
+                                    <div class="table-item-name">
+                                        <span>LEGO Technic Material Handler Construction Vehicle 42144</span>
+                                    </div>
+                                    <div class="table-prop">Age: <span
+                                            class="table-sub-prop">&nbsp;&nbsp;10 - 13 years</span>
+                                    </div>
+                                    <div class="table-prop">Manufacturer: <span
+                                            class="table-sub-prop">&nbsp;&nbsp;LEGO EUROPE NORTH</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="body-column-wrapper">
+                                <div class="unite-price-column">
+                                    <span class="table-prop">150$</span>
+                                </div>
+                                <div class="quantity-column">
+                                    <input class="table-prop-input" type="text" value="10"
+                                           readonly/>
+                                </div>
+                                <div class="shipping-column">
+                                    <span class="table-prop">FREE</span>
+                                </div>
+                                <div class="subtotal-column">
+                                    <span class="table-prop">300$</span>
+                                </div>
+                                <div class="action-column">
+                                    <button class="table-prop-button"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-table__row">
+                            <div class="details-column body-details-column">
+                                <div class="body-details-column__image-wrapper">
+                                    <img src="images/product-cart.jpg" alt="preview" class="body-details-column__image">
+                                </div>
+                                <div class="body-details-column__wrapper">
+                                    <div class="table-item-name">
+                                        <span>LEGO Technic Material Handler Construction Vehicle 42144</span>
+                                    </div>
+                                    <div class="table-prop">Age: <span
+                                            class="table-sub-prop">&nbsp;&nbsp;10 - 13 years</span>
+                                    </div>
+                                    <div class="table-prop">Manufacturer: <span
+                                            class="table-sub-prop">&nbsp;&nbsp;LEGO EUROPE NORTH</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="body-column-wrapper">
+                                <div class="unite-price-column">
+                                    <span class="table-prop">150$</span>
+                                </div>
+                                <div class="quantity-column">
+                                    <input class="table-prop-input" type="text" value="10"
+                                           readonly/>
+                                </div>
+                                <div class="shipping-column">
+                                    <span class="table-prop">FREE</span>
+                                </div>
+                                <div class="subtotal-column">
+                                    <span class="table-prop">300$</span>
+                                </div>
+                                <div class="action-column">
+                                    <button class="table-prop-button"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shopping-cart__buttons card-buttons">
+                    <button class="card-buttons__button-outline">
+                        CLEAR SHOPPING CART
+                    </button>
+                    <button class="card-buttons__button-outline">
+                        CONTINUE SHOPPING
+                    </button>
+                </div>
+                <div class="shopping-cart__forms-wrapper cart-forms">
+                    <form action="#" class="cart-forms__shipping-form form-shipping">
+                        <span class="cart-forms__title">SHIPPING ADDRESS</span>
+                        <div class="form-shipping__select-wrapper county-select">
+                            <select name="country" class="county-select__select" id="country" required>
+                                <option value="" label="Select a country ... " selected>Select a country
+                                    ...
+                                </option>
+                                <optgroup id="country-optgroup-Africa" label="Africa">
+                                    <option value="DZ" label="Algeria">Algeria</option>
+                                    <option value="AO" label="Angola">Angola</option>
+                                    <option value="BJ" label="Benin">Benin</option>
+                                    <option value="BW" label="Botswana">Botswana</option>
+                                    <option value="BF" label="Burkina Faso">Burkina Faso</option>
+                                    <option value="BI" label="Burundi">Burundi</option>
+                                    <option value="CM" label="Cameroon">Cameroon</option>
+                                    <option value="CV" label="Cape Verde">Cape Verde</option>
+                                    <option value="CF" label="Central African Republic">Central African Republic
+                                    </option>
+                                    <option value="TD" label="Chad">Chad</option>
+                                    <option value="KM" label="Comoros">Comoros</option>
+                                    <option value="CG" label="Congo - Brazzaville">Congo - Brazzaville</option>
+                                    <option value="CD" label="Congo - Kinshasa">Congo - Kinshasa</option>
+                                    <option value="CI" label="Côte d’Ivoire">Côte d’Ivoire</option>
+                                    <option value="DJ" label="Djibouti">Djibouti</option>
+                                    <option value="EG" label="Egypt">Egypt</option>
+                                    <option value="GQ" label="Equatorial Guinea">Equatorial Guinea</option>
+                                    <option value="ER" label="Eritrea">Eritrea</option>
+                                    <option value="ET" label="Ethiopia">Ethiopia</option>
+                                    <option value="GA" label="Gabon">Gabon</option>
+                                    <option value="GM" label="Gambia">Gambia</option>
+                                    <option value="GH" label="Ghana">Ghana</option>
+                                    <option value="GN" label="Guinea">Guinea</option>
+                                    <option value="GW" label="Guinea-Bissau">Guinea-Bissau</option>
+                                    <option value="KE" label="Kenya">Kenya</option>
+                                    <option value="LS" label="Lesotho">Lesotho</option>
+                                    <option value="LR" label="Liberia">Liberia</option>
+                                    <option value="LY" label="Libya">Libya</option>
+                                    <option value="MG" label="Madagascar">Madagascar</option>
+                                    <option value="MW" label="Malawi">Malawi</option>
+                                    <option value="ML" label="Mali">Mali</option>
+                                    <option value="MR" label="Mauritania">Mauritania</option>
+                                    <option value="MU" label="Mauritius">Mauritius</option>
+                                    <option value="YT" label="Mayotte">Mayotte</option>
+                                    <option value="MA" label="Morocco">Morocco</option>
+                                    <option value="MZ" label="Mozambique">Mozambique</option>
+                                    <option value="NA" label="Namibia">Namibia</option>
+                                    <option value="NE" label="Niger">Niger</option>
+                                    <option value="NG" label="Nigeria">Nigeria</option>
+                                    <option value="RW" label="Rwanda">Rwanda</option>
+                                    <option value="RE" label="Réunion">Réunion</option>
+                                    <option value="SH" label="Saint Helena">Saint Helena</option>
+                                    <option value="SN" label="Senegal">Senegal</option>
+                                    <option value="SC" label="Seychelles">Seychelles</option>
+                                    <option value="SL" label="Sierra Leone">Sierra Leone</option>
+                                    <option value="SO" label="Somalia">Somalia</option>
+                                    <option value="ZA" label="South Africa">South Africa</option>
+                                    <option value="SD" label="Sudan">Sudan</option>
+                                    <option value="SZ" label="Swaziland">Swaziland</option>
+                                    <option value="ST" label="São Tomé and Príncipe">São Tomé and Príncipe</option>
+                                    <option value="TZ" label="Tanzania">Tanzania</option>
+                                    <option value="TG" label="Togo">Togo</option>
+                                    <option value="TN" label="Tunisia">Tunisia</option>
+                                    <option value="UG" label="Uganda">Uganda</option>
+                                    <option value="EH" label="Western Sahara">Western Sahara</option>
+                                    <option value="ZM" label="Zambia">Zambia</option>
+                                    <option value="ZW" label="Zimbabwe">Zimbabwe</option>
+                                </optgroup>
+                                <optgroup id="country-optgroup-Americas" label="Americas">
+                                    <option value="AI" label="Anguilla">Anguilla</option>
+                                    <option value="AG" label="Antigua and Barbuda">Antigua and Barbuda</option>
+                                    <option value="AR" label="Argentina">Argentina</option>
+                                    <option value="AW" label="Aruba">Aruba</option>
+                                    <option value="BS" label="Bahamas">Bahamas</option>
+                                    <option value="BB" label="Barbados">Barbados</option>
+                                    <option value="BZ" label="Belize">Belize</option>
+                                    <option value="BM" label="Bermuda">Bermuda</option>
+                                    <option value="BO" label="Bolivia">Bolivia</option>
+                                    <option value="BR" label="Brazil">Brazil</option>
+                                    <option value="VG" label="British Virgin Islands">British Virgin Islands</option>
+                                    <option value="CA" label="Canada">Canada</option>
+                                    <option value="KY" label="Cayman Islands">Cayman Islands</option>
+                                    <option value="CL" label="Chile">Chile</option>
+                                    <option value="CO" label="Colombia">Colombia</option>
+                                    <option value="CR" label="Costa Rica">Costa Rica</option>
+                                    <option value="CU" label="Cuba">Cuba</option>
+                                    <option value="DM" label="Dominica">Dominica</option>
+                                    <option value="DO" label="Dominican Republic">Dominican Republic</option>
+                                    <option value="EC" label="Ecuador">Ecuador</option>
+                                    <option value="SV" label="El Salvador">El Salvador</option>
+                                    <option value="FK" label="Falkland Islands">Falkland Islands</option>
+                                    <option value="GF" label="French Guiana">French Guiana</option>
+                                    <option value="GL" label="Greenland">Greenland</option>
+                                    <option value="GD" label="Grenada">Grenada</option>
+                                    <option value="GP" label="Guadeloupe">Guadeloupe</option>
+                                    <option value="GT" label="Guatemala">Guatemala</option>
+                                    <option value="GY" label="Guyana">Guyana</option>
+                                    <option value="HT" label="Haiti">Haiti</option>
+                                    <option value="HN" label="Honduras">Honduras</option>
+                                    <option value="JM" label="Jamaica">Jamaica</option>
+                                    <option value="MQ" label="Martinique">Martinique</option>
+                                    <option value="MX" label="Mexico">Mexico</option>
+                                    <option value="MS" label="Montserrat">Montserrat</option>
+                                    <option value="AN" label="Netherlands Antilles">Netherlands Antilles</option>
+                                    <option value="NI" label="Nicaragua">Nicaragua</option>
+                                    <option value="PA" label="Panama">Panama</option>
+                                    <option value="PY" label="Paraguay">Paraguay</option>
+                                    <option value="PE" label="Peru">Peru</option>
+                                    <option value="PR" label="Puerto Rico">Puerto Rico</option>
+                                    <option value="BL" label="Saint Barthélemy">Saint Barthélemy</option>
+                                    <option value="KN" label="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                                    <option value="LC" label="Saint Lucia">Saint Lucia</option>
+                                    <option value="MF" label="Saint Martin">Saint Martin</option>
+                                    <option value="PM" label="Saint Pierre and Miquelon">Saint Pierre and Miquelon
+                                    </option>
+                                    <option value="VC" label="Saint Vincent and the Grenadines">Saint Vincent and the
+                                        Grenadines
+                                    </option>
+                                    <option value="SR" label="Suriname">Suriname</option>
+                                    <option value="TT" label="Trinidad and Tobago">Trinidad and Tobago</option>
+                                    <option value="TC" label="Turks and Caicos Islands">Turks and Caicos Islands
+                                    </option>
+                                    <option value="VI" label="U.S. Virgin Islands">U.S. Virgin Islands</option>
+                                    <option value="US" label="United States">United States</option>
+                                    <option value="UY" label="Uruguay">Uruguay</option>
+                                    <option value="VE" label="Venezuela">Venezuela</option>
+                                </optgroup>
+                                <optgroup id="country-optgroup-Asia" label="Asia">
+                                    <option value="AF" label="Afghanistan">Afghanistan</option>
+                                    <option value="AM" label="Armenia">Armenia</option>
+                                    <option value="AZ" label="Azerbaijan">Azerbaijan</option>
+                                    <option value="BH" label="Bahrain">Bahrain</option>
+                                    <option value="BD" label="Bangladesh">Bangladesh</option>
+                                    <option value="BT" label="Bhutan">Bhutan</option>
+                                    <option value="BN" label="Brunei">Brunei</option>
+                                    <option value="KH" label="Cambodia">Cambodia</option>
+                                    <option value="CN" label="China">China</option>
+                                    <option value="GE" label="Georgia">Georgia</option>
+                                    <option value="HK" label="Hong Kong SAR China">Hong Kong SAR China</option>
+                                    <option value="IN" label="India">India</option>
+                                    <option value="ID" label="Indonesia">Indonesia</option>
+                                    <option value="IR" label="Iran">Iran</option>
+                                    <option value="IQ" label="Iraq">Iraq</option>
+                                    <option value="IL" label="Israel">Israel</option>
+                                    <option value="JP" label="Japan">Japan</option>
+                                    <option value="JO" label="Jordan">Jordan</option>
+                                    <option value="KZ" label="Kazakhstan">Kazakhstan</option>
+                                    <option value="KW" label="Kuwait">Kuwait</option>
+                                    <option value="KG" label="Kyrgyzstan">Kyrgyzstan</option>
+                                    <option value="LA" label="Laos">Laos</option>
+                                    <option value="LB" label="Lebanon">Lebanon</option>
+                                    <option value="MO" label="Macau SAR China">Macau SAR China</option>
+                                    <option value="MY" label="Malaysia">Malaysia</option>
+                                    <option value="MV" label="Maldives">Maldives</option>
+                                    <option value="MN" label="Mongolia">Mongolia</option>
+                                    <option value="MM" label="Myanmar [Burma]">Myanmar [Burma]</option>
+                                    <option value="NP" label="Nepal">Nepal</option>
+                                    <option value="NT" label="Neutral Zone">Neutral Zone</option>
+                                    <option value="KP" label="North Korea">North Korea</option>
+                                    <option value="OM" label="Oman">Oman</option>
+                                    <option value="PK" label="Pakistan">Pakistan</option>
+                                    <option value="PS" label="Palestinian Territories">Palestinian Territories</option>
+                                    <option value="YD" label="People's Democratic Republic of Yemen">People's Democratic
+                                        Republic of Yemen
+                                    </option>
+                                    <option value="PH" label="Philippines">Philippines</option>
+                                    <option value="QA" label="Qatar">Qatar</option>
+                                    <option value="SA" label="Saudi Arabia">Saudi Arabia</option>
+                                    <option value="SG" label="Singapore">Singapore</option>
+                                    <option value="KR" label="South Korea">South Korea</option>
+                                    <option value="LK" label="Sri Lanka">Sri Lanka</option>
+                                    <option value="SY" label="Syria">Syria</option>
+                                    <option value="TW" label="Taiwan">Taiwan</option>
+                                    <option value="TJ" label="Tajikistan">Tajikistan</option>
+                                    <option value="TH" label="Thailand">Thailand</option>
+                                    <option value="TL" label="Timor-Leste">Timor-Leste</option>
+                                    <option value="TR" label="Turkey">Turkey</option>
+                                    <option value="TM" label="Turkmenistan">Turkmenistan</option>
+                                    <option value="AE" label="United Arab Emirates">United Arab Emirates</option>
+                                    <option value="UZ" label="Uzbekistan">Uzbekistan</option>
+                                    <option value="VN" label="Vietnam">Vietnam</option>
+                                    <option value="YE" label="Yemen">Yemen</option>
+                                </optgroup>
+                                <optgroup id="country-optgroup-Europe" label="Europe">
+                                    <option value="AL" label="Albania">Albania</option>
+                                    <option value="AD" label="Andorra">Andorra</option>
+                                    <option value="AT" label="Austria">Austria</option>
+                                    <option value="BY" label="Belarus">Belarus</option>
+                                    <option value="BE" label="Belgium">Belgium</option>
+                                    <option value="BA" label="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                                    <option value="BG" label="Bulgaria">Bulgaria</option>
+                                    <option value="HR" label="Croatia">Croatia</option>
+                                    <option value="CY" label="Cyprus">Cyprus</option>
+                                    <option value="CZ" label="Czech Republic">Czech Republic</option>
+                                    <option value="DK" label="Denmark">Denmark</option>
+                                    <option value="DD" label="East Germany">East Germany</option>
+                                    <option value="EE" label="Estonia">Estonia</option>
+                                    <option value="FO" label="Faroe Islands">Faroe Islands</option>
+                                    <option value="FI" label="Finland">Finland</option>
+                                    <option value="FR" label="France">France</option>
+                                    <option value="DE" label="Germany">Germany</option>
+                                    <option value="GI" label="Gibraltar">Gibraltar</option>
+                                    <option value="GR" label="Greece">Greece</option>
+                                    <option value="GG" label="Guernsey">Guernsey</option>
+                                    <option value="HU" label="Hungary">Hungary</option>
+                                    <option value="IS" label="Iceland">Iceland</option>
+                                    <option value="IE" label="Ireland">Ireland</option>
+                                    <option value="IM" label="Isle of Man">Isle of Man</option>
+                                    <option value="IT" label="Italy">Italy</option>
+                                    <option value="JE" label="Jersey">Jersey</option>
+                                    <option value="LV" label="Latvia">Latvia</option>
+                                    <option value="LI" label="Liechtenstein">Liechtenstein</option>
+                                    <option value="LT" label="Lithuania">Lithuania</option>
+                                    <option value="LU" label="Luxembourg">Luxembourg</option>
+                                    <option value="MK" label="Macedonia">Macedonia</option>
+                                    <option value="MT" label="Malta">Malta</option>
+                                    <option value="FX" label="Metropolitan France">Metropolitan France</option>
+                                    <option value="MD" label="Moldova">Moldova</option>
+                                    <option value="MC" label="Monaco">Monaco</option>
+                                    <option value="ME" label="Montenegro">Montenegro</option>
+                                    <option value="NL" label="Netherlands">Netherlands</option>
+                                    <option value="NO" label="Norway">Norway</option>
+                                    <option value="PL" label="Poland">Poland</option>
+                                    <option value="PT" label="Portugal">Portugal</option>
+                                    <option value="RO" label="Romania">Romania</option>
+                                    <option value="RU" label="Russia">Russia</option>
+                                    <option value="SM" label="San Marino">San Marino</option>
+                                    <option value="RS" label="Serbia">Serbia</option>
+                                    <option value="CS" label="Serbia and Montenegro">Serbia and Montenegro</option>
+                                    <option value="SK" label="Slovakia">Slovakia</option>
+                                    <option value="SI" label="Slovenia">Slovenia</option>
+                                    <option value="ES" label="Spain">Spain</option>
+                                    <option value="SJ" label="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+                                    <option value="SE" label="Sweden">Sweden</option>
+                                    <option value="CH" label="Switzerland">Switzerland</option>
+                                    <option value="UA" label="Ukraine">Ukraine</option>
+                                    <option value="SU" label="Union of Soviet Socialist Republics">Union of Soviet
+                                        Socialist Republics
+                                    </option>
+                                    <option value="GB" label="United Kingdom">United Kingdom</option>
+                                    <option value="VA" label="Vatican City">Vatican City</option>
+                                    <option value="AX" label="Åland Islands">Åland Islands</option>
+                                </optgroup>
+                                <optgroup id="country-optgroup-Oceania" label="Oceania">
+                                    <option value="AS" label="American Samoa">American Samoa</option>
+                                    <option value="AQ" label="Antarctica">Antarctica</option>
+                                    <option value="AU" label="Australia">Australia</option>
+                                    <option value="BV" label="Bouvet Island">Bouvet Island</option>
+                                    <option value="IO" label="British Indian Ocean Territory">British Indian Ocean
+                                        Territory
+                                    </option>
+                                    <option value="CX" label="Christmas Island">Christmas Island</option>
+                                    <option value="CC" label="Cocos [Keeling] Islands">Cocos [Keeling] Islands</option>
+                                    <option value="CK" label="Cook Islands">Cook Islands</option>
+                                    <option value="FJ" label="Fiji">Fiji</option>
+                                    <option value="PF" label="French Polynesia">French Polynesia</option>
+                                    <option value="TF" label="French Southern Territories">French Southern Territories
+                                    </option>
+                                    <option value="GU" label="Guam">Guam</option>
+                                    <option value="HM" label="Heard Island and McDonald Islands">Heard Island and
+                                        McDonald Islands
+                                    </option>
+                                    <option value="KI" label="Kiribati">Kiribati</option>
+                                    <option value="MH" label="Marshall Islands">Marshall Islands</option>
+                                    <option value="FM" label="Micronesia">Micronesia</option>
+                                    <option value="NR" label="Nauru">Nauru</option>
+                                    <option value="NC" label="New Caledonia">New Caledonia</option>
+                                    <option value="NZ" label="New Zealand">New Zealand</option>
+                                    <option value="NU" label="Niue">Niue</option>
+                                    <option value="NF" label="Norfolk Island">Norfolk Island</option>
+                                    <option value="MP" label="Northern Mariana Islands">Northern Mariana Islands
+                                    </option>
+                                    <option value="PW" label="Palau">Palau</option>
+                                    <option value="PG" label="Papua New Guinea">Papua New Guinea</option>
+                                    <option value="PN" label="Pitcairn Islands">Pitcairn Islands</option>
+                                    <option value="WS" label="Samoa">Samoa</option>
+                                    <option value="SB" label="Solomon Islands">Solomon Islands</option>
+                                    <option value="GS" label="South Georgia and the South Sandwich Islands">South
+                                        Georgia and the South Sandwich Islands
+                                    </option>
+                                    <option value="TK" label="Tokelau">Tokelau</option>
+                                    <option value="TO" label="Tonga">Tonga</option>
+                                    <option value="TV" label="Tuvalu">Tuvalu</option>
+                                    <option value="UM" label="U.S. Minor Outlying Islands">U.S. Minor Outlying Islands
+                                    </option>
+                                    <option value="VU" label="Vanuatu">Vanuatu</option>
+                                    <option value="WF" label="Wallis and Futuna">Wallis and Futuna</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <input class="form-shipping__state-input input-cart-form" type="text" name="state"
+                               placeholder="State">
+                        <input class="form-shipping__postcode input-cart-form" type="text" name="state"
+                               placeholder="Postcode/Zip">
+                        <button class="cart-forms__button-outline">
+                            GET A QUOTE
+                        </button>
+                    </form>
+                    <form action="#" class="cart-forms__discount-form form-discount">
+                        <span class="cart-forms__title">COUPON DISCOUNT</span>
+                        <label for="coupon" class="input-cart-form__label">Enter your coupon code if you have
+                            one</label>
+                        <input id="coupon" class="form-discount__state-input input-cart-form" type="text" name="state"
+                               placeholder="State">
+                        <button class="cart-forms__button-outline">
+                            APPLY COUPON
+                        </button>
+                    </form>
+                    <form action="#" class="cart-forms__total-form form-total">
+                        <div class="form-total__currency-wrapper">
+                            <div class="form-total__sub-total">SUB TOTAL<span class="form-total__sub-total-currency">&nbsp;&nbsp;&nbsp;$900</span>
+                            </div>
+                            <div class="form-total__grand-total">GRAND TOTAL<span
+                                    class="form-total__grand-total-currency">&nbsp;&nbsp;&nbsp;$900</span></div>
+                        </div>
+                        <button class="cart-forms__button-solid">
+                            PROCEED TO CHECKOUT
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+    <div class="footer__inner">
+        <section class="page__subscribe-form subscribe-form">
+    <div class="subscribe-form__gray-filter">
+        <div class="container">
+            <div class="subscribe-form__inner">
+                <div class="subscribe-form__review-slider review-slider">
+                    <div class="review-slider__item-wrapper">
+                        <div class="review-slider__item">
+                            <img src="images/review-avatar.jpg" alt="review-avatar" class="review-slider__avatar"/>
+                            <div class="review-slider__description-wrapper">
+                                <p class="review-slider__description">
+                                    "Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                                    a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium"
+                                </p>
+                                <p class="review-slider__full-name">
+                                    Bin Burhan
+                                </p>
+                                <p class="review-slider__position">
+                                    Dhaka, Bd
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-slider__item-wrapper">
+                        <div class="review-slider__item">
+                            <img src="images/review-avatar.jpg" alt="review-avatar" class="review-slider__avatar"/>
+                            <div class="review-slider__description-wrapper">
+                                <p class="review-slider__description">
+                                    "Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                                    a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium"
+                                </p>
+                                <p class="review-slider__full-name">
+                                    Bin Burhan
+                                </p>
+                                <p class="review-slider__position">
+                                    Dhaka, Bd
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-slider__item-wrapper">
+                        <div class="review-slider__item">
+                            <img src="images/review-avatar.jpg" alt="review-avatar" class="review-slider__avatar"/>
+                            <div class="review-slider__description-wrapper">
+                                <p class="review-slider__description">
+                                    "Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                                    a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium"
+                                </p>
+                                <p class="review-slider__full-name">
+                                    Bin Burhan
+                                </p>
+                                <p class="review-slider__position">
+                                    Dhaka, Bd
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subscribe-form__form form-subscribe">
+                    <div class="form-subscribe__title-wrapper">
+                        <div class="form-subscribe__title">
+                            SUBSCRIBE
+                        </div>
+                        <div class="form-subscribe__sub-title">
+                            FOR OUR NEWLETTER AND PROMOTION
+                        </div>
+                    </div>
+                    <form action="#" class="form-subscribe__email-form form-email">
+                        <input
+                                class="form-email__input"
+                                autocomplete="on" type="text" name="form[]" data-error="Error"
+                                placeholder="Enter You Email"
+                        >
+                        <button type="submit" class="form-email__button">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <div class="container">
+            <div class="footer-body body-footer">
+                <div class="body-footer body-footer__inner">
+                    <div class="body-footer__about about-footer">
+                        <a href='index.html' class="about-footer__logo">
+                            <img src="images/Mastermind-FatStack-TwoColour.svg" alt="logo">
+                        </a>
+                        <div class="about-footer__description">
+                            <p>
+                                Gary Grant found employment in the 1970s at a local bike shop in Amersham, his hometown.
+                                His natural talent for buying and selling flourished when he recognised a new craze for
+                                customised skateboards, so he started selling skateboard accessories while he was still
+                                working at the bike shop. The owner of the bike shop was suitably unimpressed that the
+                                majority of calls into the store were for Gary and so Gary was let go, set free to start
+                                up on his own.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="body-footer__spoiler-wrapper spoiler-wrapper">
+                        <div class="body-footer__item item-footer">
+                            <div data-spoilers="768" class="item-footer__spoiler spoiler-item-footer">
+                                <div class="spoiler-item-footer__item">
+                                    <button type="button" data-spoiler class="spoiler-item-footer__title">
+                                        COMPANY
+                                    </button>
+                                    <div class="spoiler-item-footer__body">
+                                        <nav class="menu-footer">
+                                            <ul class="menu-footer__list">
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">
+                                                        Home
+                                                    </a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">
+                                                        Shop
+                                                    </a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">
+                                                        About
+                                                    </a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">
+                                                        How it Works
+                                                    </a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">
+                                                        Contact
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body-footer__item item-footer">
+                            <div data-spoilers="768" class="item-footer__spoiler spoiler-item-footer">
+                                <div class="spoiler-item-footer__item">
+                                    <button type="button" data-spoiler class="spoiler-item-footer__title">
+                                        INFORMATION
+                                    </button>
+                                    <div class="spoiler-item-footer__body">
+                                        <nav class="menu-footer">
+                                            <ul class="menu-footer__list">
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">
+                                                        Terms & Condition
+                                                    </a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">
+                                                        Privacy Policy
+                                                    </a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">
+                                                        How to Buy
+                                                    </a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">
+                                                        How to Sell
+                                                    </a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">
+                                                        Promotion
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body-footer__item item-footer">
+                            <div data-spoilers="768" class="item-footer__spoiler spoiler-item-footer">
+                                <div class="spoiler-item-footer__item">
+                                    <button type="button" data-spoiler class="spoiler-item-footer__title">
+                                        SHOP CATEGORY
+                                    </button>
+                                    <div class="spoiler-item-footer__body">
+                                        <nav class="menu-footer">
+                                            <ul class="menu-footer__list">
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">
+                                                        Lego
+                                                    </a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">
+                                                        Dolls
+                                                    </a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">
+                                                        Robots
+                                                    </a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">
+                                                        Cars
+                                                    </a>
+                                                </li>
+                                                <li class="menu-footer__item">
+                                                    <a href="" class="menu-footer__link">
+                                                        Brows All
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-social">
+            <div class="container">
+                <div class="footer-social__inner">
+                    <span class="footer-social__copyright">
+                        © 2017  Toys Rights Reserved.
+                    </span>
+                    <div class="footer-social__social-links social-links">
+
+                        <a href="#" class="social-link-wrapper__link social-link">
+                            <svg class="social-link__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+                            </svg>
+                        </a>
+
+
+                        <a href="#" class="social-link-wrapper__link social-link">
+                            <svg class="social-link__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/>
+                            </svg>
+                        </a>
+
+
+                        <a href="#" class="social-link-wrapper__link social-link">
+                            <svg class="social-link__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/>
+                            </svg>
+                        </a>
+
+
+                        <a href="#" class="social-link-wrapper__link social-link">
+                            <svg class="social-link__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z"/>
+                            </svg>
+                        </a>
+
+
+                        <a href="#" class="social-link-wrapper__link social-link">
+                            <svg class="social-link__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                <path d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"/>
+                            </svg>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+<script src="js/dynamicAdapt.js"></script>
+<script src="js/spoiler.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>
